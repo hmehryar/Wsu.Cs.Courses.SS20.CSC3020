@@ -4,6 +4,6 @@ package com.csc3020.lecture04.hc7391;
 public class Lecture04Source01 {
     public static void main(String[] args)
     {
-        System.out.println("HC: 7391 - Bryan Vinson");
+        System.out.println("HC:7391 - Bryan Vinson");
     }
 }
