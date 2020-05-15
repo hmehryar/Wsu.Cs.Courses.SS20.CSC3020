@@ -1,4 +1,4 @@
-package com.csc3020.lecture04.hm;
+package com.csc3020.lecture04.go3480;
 
 public class Lecture04Source {
     public static void main(String[] args) {
