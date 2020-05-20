@@ -2,7 +2,7 @@ package com.csc3020.lecture05.gz0715;
 //*
 //Author: Mirza Saim Saqib Beg
 // */
-//Lecture 05
+//Lecture 05//
 public class Lecture05Source {
     public static void main(String[] args) {
         // Using Class
