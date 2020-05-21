@@ -1,5 +1,5 @@
 package com.csc3020.lecture06.gi3399;
-//Lecture 05: Class
+//Lecture 06: Class
 public class Flight {
     private int passengers;
     private int seats;
