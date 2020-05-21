@@ -1,5 +1,6 @@
 package com.csc3020.lecture06.gi3399;
-//Lecture 05: Class
+//Lecture 06: Class
+//Author: George Esho
 public class Flight {
     private int passengers;
     private int seats;
