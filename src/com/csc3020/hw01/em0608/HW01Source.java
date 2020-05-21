@@ -1,4 +1,4 @@
-package com.csc3020.lecture04.em0608.hw;
+package com.csc3020.hw01.em0608;
 
 /**
  * Calculator Homework Assignment
@@ -7,7 +7,7 @@ package com.csc3020.lecture04.em0608.hw;
  * */
 
 
-public class hw01 {
+public class HW01Source {
     public static void main(String[] args) {
 
         //Input:
