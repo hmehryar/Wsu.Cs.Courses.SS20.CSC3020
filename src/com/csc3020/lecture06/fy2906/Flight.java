@@ -1,6 +1,4 @@
-
-
-package fp6266;
+package com.csc3020.lecture06.fy2906;
 
 public class Flight {
     private int passengers;
@@ -11,15 +9,18 @@ public class Flight {
         passengers = 0;
     }
 
-    public int getSeat(){
-        return  seats;
+    public int getSeats() {
+        return seats;
     }
-    public void setSeats(int seats){
-        this.seats=seats;
+
+    public void setSeats(int seats) {
+        this.seats = seats;
     }
+
     public int getPassengers() {
         return passengers;
     }
+
     public void setPassengers(int passengers) {
         this.passengers = passengers;
     }
@@ -39,14 +40,16 @@ public class Flight {
         int total = passengers + f2.passengers;
         return total <= seats;
     }
-    public  Flight createFlightWithBoth(Flight flight2){
-        Flight newFlight=new Flight();
-        newFlight.seats=seats;
-        newFlight.passengers=this.passengers+flight2.passengers;
+
+    public Flight createFlightWithBoth(Flight flight2) {
+        Flight newFlight = new Flight();
+        newFlight.seats = seats;
+        newFlight.passengers = this.passengers + flight2.passengers;
         return newFlight;
     }
-    public void print(){
-        String str="Flight[ seats= "+this.seats+",passengers= "+this.passengers+"]";
+
+    public void print() {
+        String str = "Flight[seats = " + this.seats + ", passengers = " + this.passengers + "]";
         System.out.println(str);
     }
-    }
+}
