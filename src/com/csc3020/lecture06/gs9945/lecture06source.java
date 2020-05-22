@@ -2,6 +2,9 @@ package com.csc3020.lecture06.gs9945;
 
 import com.csc3020.lecture06.hm.Flight;
 
+//Edited by Kristopher Covert (GS9945)
+//Flight Class Modification and Deminstration
+
 public class lecture06source {
 
     public static void main(String[] args){
