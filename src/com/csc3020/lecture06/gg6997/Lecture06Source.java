@@ -2,6 +2,7 @@ package com.csc3020.lecture06.gg6997;
 
 /*
  * Author: Manraj Singh
+ * Class: CSC 3020
  * Lecture 06: Complex Data Types
  * Date: 05/21/2020
  * */
