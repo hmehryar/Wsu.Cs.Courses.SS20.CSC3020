@@ -1,9 +1,10 @@
-package com.csc3020.lecture06.hm;
-// Lecture 05: Class//
+
+
+package fp6266;
+
 public class Flight {
-    public int passengers;
     private int passengers;
-    public int seats;
+    private int seats;
 
     public Flight() {
         seats = 150;
@@ -23,7 +24,7 @@ public class Flight {
         this.passengers = passengers;
     }
 
-    public void add1Passenger() {
+    void add1Passenger() {
         if (passengers < seats)
             passengers += 1;
         else
@@ -48,4 +49,4 @@ public class Flight {
         String str="Flight[ seats= "+this.seats+",passengers= "+this.passengers+"]";
         System.out.println(str);
     }
-}
+    }

@@ -1,9 +1,10 @@
-package com.csc3020.lecture06.hm;
-// Lecture 05: Class//
+package com.csc3020.lecture06.gg6997;
+
+//Author: Manraj Singh
+//Lecture 06: Flight Class
 public class Flight {
-    public int passengers;
     private int passengers;
-    public int seats;
+    private int seats;
 
     public Flight() {
         seats = 150;
@@ -13,17 +14,20 @@ public class Flight {
     public int getSeat(){
         return  seats;
     }
+
     public void setSeats(int seats){
         this.seats=seats;
     }
+
     public int getPassengers() {
         return passengers;
     }
+
     public void setPassengers(int passengers) {
         this.passengers = passengers;
     }
 
-    public void add1Passenger() {
+    void add1Passenger() {
         if (passengers < seats)
             passengers += 1;
         else
