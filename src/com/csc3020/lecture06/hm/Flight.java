@@ -1,8 +1,9 @@
 package com.csc3020.lecture06.hm;
 // Lecture 05: Class//
 public class Flight {
+    public int passengers;
     private int passengers;
-    private int seats;
+    public int seats;
 
     public Flight() {
         seats = 150;
@@ -22,7 +23,7 @@ public class Flight {
         this.passengers = passengers;
     }
 
-    void add1Passenger() {
+    public void add1Pass() {
         if (passengers < seats)
             passengers += 1;
         else
