@@ -1,7 +1,5 @@
-package com.csc3020.lecture06.gg6997;
+package com.csc3020.lecture06.gh9762;
 
-//Author: Manraj Singh
-//Lecture 06: Flight Class
 public class Flight {
     private int passengers;
     private int seats;
@@ -14,15 +12,12 @@ public class Flight {
     public int getSeat(){
         return  seats;
     }
-
     public void setSeats(int seats){
         this.seats=seats;
     }
-
     public int getPassengers() {
         return passengers;
     }
-
     public void setPassengers(int passengers) {
         this.passengers = passengers;
     }
@@ -38,12 +33,12 @@ public class Flight {
         System.out.println("Too many!");
     }
 
-    public boolean hasRoom(Flight f2) {
+    public boolean hasRoom(com.csc3020.lecture06.hm.Flight f2) {
         int total = passengers + f2.passengers;
         return total <= seats;
     }
-    public  Flight createFlightWithBoth(Flight flight2){
-        Flight newFlight=new Flight();
+    public com.csc3020.lecture06.hm.Flight createFlightWithBoth(com.csc3020.lecture06.hm.Flight flight2){
+        com.csc3020.lecture06.hm.Flight newFlight=new com.csc3020.lecture06.hm.Flight();
         newFlight.seats=seats;
         newFlight.passengers=this.passengers+flight2.passengers;
         return newFlight;
