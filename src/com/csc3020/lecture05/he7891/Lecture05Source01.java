@@ -1,4 +1,4 @@
-package com.csc3020.Lecture05.he7891;
+package com.csc3020.lecture05.he7891;
 
 /*
 * REPRESENTING COMPLEX TYPES WITH CLASSES
