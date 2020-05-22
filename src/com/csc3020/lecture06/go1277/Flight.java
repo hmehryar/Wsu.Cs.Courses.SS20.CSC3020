@@ -1,22 +1,52 @@
 package com.csc3020.lecture06.go1277;
-import com.csc3020.lecture06.go1277.Lecture06Source;
 
-public static void main(String[] args)
+public class Flight
+{
+    private int passengers;
+    private int seats;
+    public Flight()
     {
-
-        com.csc3020.lecture05.go1277.Flight flight1 = new com.csc3020.lecture05.go1277.Flight();
-        com.csc3020.lecture05.go1277.Flight flight2 = new com.csc3020.lecture05.go1277.Flight();
-        flight2.add1Passenger();
-
-        System.out.println(flight2.passengers);
-        flight2 = flight1;
-        System.out.println(flight2.passengers);
-
-        flight1.add1Passenger();
-        flight1.add1Passenger();
-
-        System.out.println(flight2.passengers);
-
-
+        seats = 150;
+        passengers = 0;
     }
+
+    private void handleTooMany()
+    {
+        System.out.println("Too Many");
+    }
+    public int getSeats()
+    {
+        return seats;
+    }
+    public void setSeats(int seats)
+    {
+        this.seats = seats;
+    }
+    public void add1Passenger()
+    {
+        if(passengers < seats)
+            passengers += 1;
+        else
+            handleTooMany();
+    }
+
+    public boolean hasRoom(Flight f2)
+    {
+        int total = this.passengers + f2.passengers;
+        return total <= seats;
+    }
+    public Flight createNewWithBoth(Flight f2)
+    {
+        Flight newFlight= new Flight();
+        newFlight.seats= seats;
+        newFlight.passengers= passengers + f2.passengers;
+        return newFlight;
+    }
+    public void print(){
+        String str="Flight[ seats= "+this.seats+",passengers= "+this.passengers+"]";
+        System.out.println(str);
+    }
+    
+}
+
 

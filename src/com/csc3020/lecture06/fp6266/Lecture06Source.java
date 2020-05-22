@@ -1,37 +1,22 @@
-package com.csc3020.lecture06.gs9945;
+package com.csc3020.lecture06.fp6266;
 
-import com.csc3020.lecture06.hm.Flight;
-
-//Edited by Kristopher Covert (GS9945)
-//Flight Class Modification and Deminstration
-
-public class lecture06source {
-
+public class Lecture06Source {
     public static void main(String[] args){
         Flight oFlight1=new Flight();
-
         for (int count = 0; count <20 ; count++) {
             oFlight1.add1Passenger();
         }
-
-
         Flight oFlight2=new Flight();
-
         for (int count = 0; count <30 ; count++) {
             oFlight1.add1Passenger();
         }
-
-
         boolean flight1HasRoom= oFlight1.hasRoom(oFlight2);
         System.out.println(flight1HasRoom);
 
         oFlight2=new Flight();
-
         for (int count = 0; count < 131; count++) {
             oFlight2.add1Passenger();
         }
-
-
         flight1HasRoom= oFlight1.hasRoom(oFlight2);
         System.out.println(flight1HasRoom);
 
@@ -45,22 +30,18 @@ public class lecture06source {
         Flight lax1=new Flight();
         Flight lax2=new Flight();
 
-        //Adding Passengers to the object
+        //Adding Passengers
         for (int count = 0; count <20; count++) {
             lax1.add1Passenger();
         }
 //        for (int count = 0; count <30; count++) {
 //            lax2.add1Passenger();
 //        }
-
-
         for (int count = 0; count <131; count++) {
             lax2.add1Passenger();
         }
         lax1.print();
         lax2.print();
-
-
         //Flight lax3=Flight;
         Flight lax3=null;
         if(lax1.hasRoom(lax2)){
@@ -69,7 +50,7 @@ public class lecture06source {
         if(lax3!=null)
             lax3.print();
         else
-            System.out.println("The Flights have not been Merged");
+            System.out.println("The flights haven't merged!!");
 
 
         //Accessors and Mutator
@@ -78,5 +59,4 @@ public class lecture06source {
         System.out.println(slcToNyc.getSeat());
 
     }
-
 }
