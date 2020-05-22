@@ -22,5 +22,9 @@ public class lecture06source {
             lax3.printStats();
         } else System.out.println("The flights could not be merged");
 
+        //Accessors and Mutator
+        Flight slcToNyc = new Flight("slcToNyc");
+        slcToNyc.setSeats(250);
+        System.out.println(slcToNyc.getSeat());
     }
 }
