@@ -1,27 +1,27 @@
-package com.csc3020.lecture06.hm;
+package com.csc3020.lecture06.fp6266;
 
 public class Lecture06Source {
     public static void main(String[] args){
         Flight oFlight1=new Flight();
         for (int count = 0; count <20 ; count++) {
-            oFlight1.add1Pass();
+            oFlight1.add1Passenger();
         }
         Flight oFlight2=new Flight();
         for (int count = 0; count <30 ; count++) {
-            oFlight1.add1Pass();
+            oFlight1.add1Passenger();
         }
         boolean flight1HasRoom= oFlight1.hasRoom(oFlight2);
         System.out.println(flight1HasRoom);
 
         oFlight2=new Flight();
         for (int count = 0; count < 131; count++) {
-            oFlight2.add1Pass();
+            oFlight2.add1Passenger();
         }
         flight1HasRoom= oFlight1.hasRoom(oFlight2);
         System.out.println(flight1HasRoom);
 
         oFlight2=new Flight();
-        oFlight2.add1Pass();
+        oFlight2.add1Passenger();
         oFlight1.print();
         Flight oMergedFlight= oFlight1.createFlightWithBoth(oFlight2);
         oFlight1.print();
@@ -32,13 +32,13 @@ public class Lecture06Source {
 
         //Adding Passengers
         for (int count = 0; count <20; count++) {
-            lax1.add1Pass();
+            lax1.add1Passenger();
         }
 //        for (int count = 0; count <30; count++) {
 //            lax2.add1Passenger();
 //        }
         for (int count = 0; count <131; count++) {
-            lax2.add1Pass();
+            lax2.add1Passenger();
         }
         lax1.print();
         lax2.print();
