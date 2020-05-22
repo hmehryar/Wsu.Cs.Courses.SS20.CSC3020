@@ -58,5 +58,8 @@ public class Lecture06Source {
         slcToNyc.setSeats(250);
         System.out.println(slcToNyc.getSeat());
 
+        System.out.println("New Patch");
+        
+
     }
 }
