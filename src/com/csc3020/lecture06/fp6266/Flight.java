@@ -1,6 +1,6 @@
 
 
-package fp6266;
+package com.csc3020.lecture06.fp6266;
 
 public class Flight {
     private int passengers;
