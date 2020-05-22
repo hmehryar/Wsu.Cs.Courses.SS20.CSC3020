@@ -1,6 +1,7 @@
 package com.csc3020.lecture06.gg6997;
 
-//Lecture 05: Class
+//Author: Manraj Singh
+//Lecture 06: Flight Class
 public class Flight {
     private int passengers;
     private int seats;

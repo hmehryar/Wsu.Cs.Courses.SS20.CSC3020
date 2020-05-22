@@ -1,5 +1,5 @@
-package com.csc3020.lecture06.hm;
-// Lecture 05: Class//
+package com.csc3020.lecture06.gl1193;
+
 public class Flight {
     public int passengers;
     private int passengers;
@@ -23,7 +23,7 @@ public class Flight {
         this.passengers = passengers;
     }
 
-    public void add1Pass() {
+    public void add1Passenger() {
         if (passengers < seats)
             passengers += 1;
         else
@@ -48,4 +48,3 @@ public class Flight {
         String str="Flight[ seats= "+this.seats+",passengers= "+this.passengers+"]";
         System.out.println(str);
     }
-}

@@ -1,7 +1,4 @@
-package fp6266;
-
-public class Lecture06Code {
-
+public class Lecture06Source {
     public static void main(String[] args){
         Flight oFlight1=new Flight();
         for (int count = 0; count <20 ; count++) {
@@ -60,5 +57,4 @@ public class Lecture06Code {
         System.out.println(slcToNyc.getSeat());
 
     }
-        }
-        
+}
