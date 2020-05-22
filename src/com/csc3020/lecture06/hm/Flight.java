@@ -23,7 +23,7 @@ public class Flight {
         this.passengers = passengers;
     }
 
-    public void add1Passenger() {
+    public void add1Pass() {
         if (passengers < seats)
             passengers += 1;
         else
