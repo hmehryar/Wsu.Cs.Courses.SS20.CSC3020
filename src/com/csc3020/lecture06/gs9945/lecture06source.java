@@ -2,20 +2,23 @@ package com.csc3020.lecture06.gs9945;
 
 import com.csc3020.lecture06.hm.Flight;
 
+//Edited by Kristopher Covert (GS9945)
+//Flight Class Modification and Demonstration
+
 public class lecture06source {
 
     public static void main(String[] args){
         Flight oFlight1=new Flight();
 
         for (int count = 0; count <20 ; count++) {
-            oFlight1.add1Passenger();
+            oFlight1.add1Pass();
         }
 
 
         Flight oFlight2=new Flight();
 
         for (int count = 0; count <30 ; count++) {
-            oFlight1.add1Passenger();
+            oFlight1.add1Pass();
         }
 
 
@@ -25,7 +28,7 @@ public class lecture06source {
         oFlight2=new Flight();
 
         for (int count = 0; count < 131; count++) {
-            oFlight2.add1Passenger();
+            oFlight2.add1Pass();
         }
 
 
@@ -33,7 +36,7 @@ public class lecture06source {
         System.out.println(flight1HasRoom);
 
         oFlight2=new Flight();
-        oFlight2.add1Passenger();
+        oFlight2.add1Pass();
         oFlight1.print();
         Flight oMergedFlight= oFlight1.createFlightWithBoth(oFlight2);
         oFlight1.print();
@@ -44,7 +47,7 @@ public class lecture06source {
 
         //Adding Passengers to the object
         for (int count = 0; count <20; count++) {
-            lax1.add1Passenger();
+            lax1.add1Pass();
         }
 //        for (int count = 0; count <30; count++) {
 //            lax2.add1Passenger();
@@ -52,7 +55,7 @@ public class lecture06source {
 
 
         for (int count = 0; count <131; count++) {
-            lax2.add1Passenger();
+            lax2.add1Pass();
         }
         lax1.print();
         lax2.print();
