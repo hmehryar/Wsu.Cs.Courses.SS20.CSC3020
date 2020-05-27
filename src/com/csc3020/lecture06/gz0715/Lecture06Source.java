@@ -1,6 +1,6 @@
 package com.csc3020.lecture06.gz0715;
 
-public class Lecture06Source {
+public class Lecture06Source { //
     public static void main(String[] args) {
         Flight oFlight1 = new Flight();
         for (int count = 0; count < 20; count++) {
