@@ -1,24 +1,30 @@
-package com.csc3020.lecture07.gz0715;
+package com.csc3020.lecture07.he7891;
 
-// Lecture 05: Class//
+// *
+// Author: Nathan Tattrie
+// Student ID: he7891
+// Lecture06
+// *
+
 public class Flight {
+
     public int passengers;
     public int seats;
     private boolean[] isSeatAvailable;
     private int flightNumber;
     private char flightClass;
 
+    // Initialization brackets for constructors
+    // Have "this()" in every constructor to replicate this code
     {
-        seats = 150;
-        passengers = 0;
-
         isSeatAvailable = new boolean[seats];
         for (int index = 0; index < seats; index++) {
             isSeatAvailable[index] = true;
         }
+        seats = 150;
+        passengers = 0;
     }
 
-    // Constructors
     public Flight() {
 
     }
@@ -31,24 +37,6 @@ public class Flight {
     public Flight(char flightClass) {
         this();
         this.flightClass = flightClass;
-    }
-
-
-    // Getter and Setter Functions
-    public int getSeat() {
-        return seats;
-    }
-
-    public void setSeats(int seats) {
-        this.seats = seats;
-    }
-
-    public int getPassengers() {
-        return passengers;
-    }
-
-    public void setPassengers(int passengers) {
-        this.passengers = passengers;
     }
 
     public int getFlightNumber() {
@@ -67,8 +55,31 @@ public class Flight {
         this.flightClass = flightClass;
     }
 
-    // Functions
-    public void add1Pass() {
+    // Use control+insert to pull up a menu for automatically making a getter and setter
+    // Getter
+    public int getSeat() {
+        return seats;
+    }
+    // Setter. Use underscore as a best practice.
+    public void setSeats(int _seats) {
+        this.seats = _seats;
+    }
+
+    // Getter
+    public int getPassengers() {
+        return passengers;
+    }
+
+    // Setter
+    public void setPassengers(int passengers) {
+        this.passengers = passengers;
+    }
+
+    public int getSeats() {
+        return seats;
+    }
+
+    public void add1Passenger() {
         if (passengers < seats)
             passengers += 1;
         else
@@ -92,7 +103,8 @@ public class Flight {
     }
 
     public void print() {
-        String str = "Flight[ seats= " + this.seats + ",passengers= " + this.passengers + "]";
+        String str = "Flight[ seats = " + this.seats + ", passengers = " + this.passengers + " ]";
         System.out.println(str);
     }
+
 }
