@@ -1,5 +1,6 @@
 package com.csc3020.lecture07.gg8219;
 
+//passenger
 public class Passenger {
     private int checkedBags;
     private int freeBags;

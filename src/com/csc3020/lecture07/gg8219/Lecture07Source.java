@@ -1,6 +1,7 @@
 package com.csc3020.lecture07.gg8219;
 
 import com.csc3020.lecture07.gg8219.Earth;
+//lecture07
 
 public class Lecture07Source {
     public static void main(String[] args) {

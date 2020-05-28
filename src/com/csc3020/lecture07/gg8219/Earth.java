@@ -1,7 +1,7 @@
 package com.csc3020.lecture07.gg8219;
 
 public class Earth {
-    //long circumferenceInMiles;
+
     long circumferenceInMiles=24901;
     long circumferenceInKilometers= convertToKm();
 
