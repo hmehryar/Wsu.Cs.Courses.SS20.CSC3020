@@ -1,6 +1,5 @@
-package com.csc3020.lecture07.gz0715;
+package com.csc3020.lecture07.em0608;
 
-// Lecture 05: Class//
 public class Flight {
     public int passengers;
     public int seats;
@@ -11,64 +10,63 @@ public class Flight {
     {
         seats = 150;
         passengers = 0;
-
         isSeatAvailable = new boolean[seats];
-        for (int index = 0; index < seats; index++) {
-            isSeatAvailable[index] = true;
+
+        for (int i = 0; i < seats; i++) {
+            isSeatAvailable[i] = true;
         }
     }
 
-    // Constructors
-    public Flight() {
 
+    public Flight(){
     }
 
-    public Flight(int flightNumber) {
+
+    public Flight(int flightNumber){
         this();
         this.flightNumber = flightNumber;
     }
 
-    public Flight(char flightClass) {
+
+    public Flight(char flightClass){
         this();
         this.flightClass = flightClass;
     }
 
 
-    // Getter and Setter Functions
-    public int getSeat() {
-        return seats;
+    public int getSeat(){
+        return  seats;
+    }
+    public void setSeats(int seats){
+        this.seats=seats;
     }
 
-    public void setSeats(int seats) {
-        this.seats = seats;
-    }
-
-    public int getPassengers() {
-        return passengers;
-    }
-
-    public void setPassengers(int passengers) {
-        this.passengers = passengers;
-    }
 
     public int getFlightNumber() {
         return flightNumber;
     }
-
     public void setFlightNumber(int flightNumber) {
         this.flightNumber = flightNumber;
     }
 
+
     public char getFlightClass() {
         return flightClass;
     }
-
     public void setFlightClass(char flightClass) {
         this.flightClass = flightClass;
     }
 
-    // Functions
-    public void add1Pass() {
+
+    public int getPassengers() {
+        return passengers;
+    }
+    public void setPassengers(int passengers) {
+        this.passengers = passengers;
+    }
+
+
+    public void add1Passenger() {
         if (passengers < seats)
             passengers += 1;
         else
@@ -83,16 +81,14 @@ public class Flight {
         int total = passengers + f2.passengers;
         return total <= seats;
     }
-
-    public Flight createFlightWithBoth(Flight flight2) {
-        Flight newFlight = new Flight();
-        newFlight.seats = seats;
-        newFlight.passengers = this.passengers + flight2.passengers;
+    public  Flight createFlightWithBoth(Flight flight2){
+        Flight newFlight=new Flight();
+        newFlight.seats=seats;
+        newFlight.passengers=this.passengers+flight2.passengers;
         return newFlight;
     }
-
-    public void print() {
-        String str = "Flight[ seats= " + this.seats + ",passengers= " + this.passengers + "]";
+    public void print(){
+        String str="Flight[ seats= "+this.seats+",passengers= "+this.passengers+"]";
         System.out.println(str);
     }
 }

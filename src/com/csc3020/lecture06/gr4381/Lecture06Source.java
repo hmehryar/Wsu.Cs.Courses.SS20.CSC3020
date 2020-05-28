@@ -56,8 +56,5 @@ public class Lecture06Source {
         slcToNyc.setSeats(250);
         System.out.println(slcToNyc.getSeats());
         slcToNyc.print();
-
-
-
     }
 }

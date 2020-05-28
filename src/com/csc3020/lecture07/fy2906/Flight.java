@@ -1,41 +1,46 @@
-package com.csc3020.lecture07.gz0715;
+package com.csc3020.lecture07.fy2906;
 
-// Lecture 05: Class//
 public class Flight {
-    public int passengers;
-    public int seats;
+    private int passengers;
+    private int seats;
     private boolean[] isSeatAvailable;
     private int flightNumber;
     private char flightClass;
-
     {
         seats = 150;
         passengers = 0;
 
         isSeatAvailable = new boolean[seats];
-        for (int index = 0; index < seats; index++) {
-            isSeatAvailable[index] = true;
+        for (int i = 0; i < seats; i++) {
+            isSeatAvailable[i] = true;
         }
     }
 
-    // Constructors
     public Flight() {
-
     }
 
+//    public Flight(int seats) {
+//        this.seats = seats;
+//
+//        isSeatAvailable = new boolean[seats];
+//        for (int i = 0; i < seats; i++) {
+//            isSeatAvailable[i] = true;
+//        }
+//    }
+
     public Flight(int flightNumber) {
-        this();
+        //this();
+        for (int i = 0; i < seats; i++) {
+            isSeatAvailable[i] = true;
+        }
         this.flightNumber = flightNumber;
     }
 
     public Flight(char flightClass) {
-        this();
         this.flightClass = flightClass;
     }
 
-
-    // Getter and Setter Functions
-    public int getSeat() {
+    public int getSeats() {
         return seats;
     }
 
@@ -67,8 +72,7 @@ public class Flight {
         this.flightClass = flightClass;
     }
 
-    // Functions
-    public void add1Pass() {
+    void add1Passenger() {
         if (passengers < seats)
             passengers += 1;
         else
@@ -92,7 +96,7 @@ public class Flight {
     }
 
     public void print() {
-        String str = "Flight[ seats= " + this.seats + ",passengers= " + this.passengers + "]";
+        String str = "Flight[seats = " + this.seats + ", passengers = " + this.passengers + "]";
         System.out.println(str);
     }
 }
