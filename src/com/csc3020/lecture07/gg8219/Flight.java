@@ -1,6 +1,6 @@
 package com.csc3020.lecture07.gg8219;
 
-//gg8219
+
 
 public class Flight {
     public int passengers;

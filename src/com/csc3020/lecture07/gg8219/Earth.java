@@ -9,3 +9,4 @@ public class Earth {
         return  (long) Math.ceil( circumferenceInMiles*(1.6d));
     }
 }
+//
