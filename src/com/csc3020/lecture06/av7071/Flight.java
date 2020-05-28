@@ -1,5 +1,5 @@
 package com.csc3020.lecture06.av7071;
-/**Lecture 05: Class**/
+/**Lecture 06: Class**/
 public class Flight {
     public int passengers;
     public int seats;
@@ -9,7 +9,21 @@ public class Flight {
         passengers = 0;
     }
 
-    public void add1Passenger(){
+    public int getSeats() {
+        return seats;
+    }
+    public void setSeats(int seats) {
+        this.seats = seats;
+    }
+
+    public int getPassengers() {
+        return passengers;
+    }
+    public void setPassengers(int passengers) {
+        this.passengers = passengers;
+    }
+
+    public void add1Passenger() {
         if(passengers < seats) {
             passengers += 1;
             //passengers++;
@@ -20,11 +34,21 @@ public class Flight {
     private void handleTooMany(){
         System.out.println("Too Many");
     }
-    public boolean hasRoom(com.cs3020.lecture05.av7071.Flight f2){
+
+    public boolean hasRoom(Flight f2) {
         int total = passengers + f2.passengers;
-        if (total <= seats)
-            return true;
-        else
-            return false;
+        return total <= seats;
+    }
+
+    public Flight createFlightWithBoth(Flight flight2) {
+        Flight newFlight = new Flight();
+        newFlight.seats = seats;
+        newFlight.passengers = this.passengers + flight2.passengers;
+        return newFlight;
+    }
+
+    public void print() {
+        String str = "Flight[ seats = "+this.seats+",passengers = "+this.passengers+" ]";
+        System.out.println(str);
     }
 }

@@ -2,7 +2,6 @@ package com.csc3020.lecture06.gh9893;
 
     public class Flight {
         public int passengers;
-        private int passengers;
         public int seats;
 
         public Flight() {
@@ -49,4 +48,4 @@ package com.csc3020.lecture06.gh9893;
             System.out.println(str);
         }
     }
-}
+
