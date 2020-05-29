@@ -1,6 +1,6 @@
 package com.csc3020.lecture08.gg8219;
 
-//Ashraf Uddin
+
 
 public class Lecture08Source {
     public static void main(String[] args) {
