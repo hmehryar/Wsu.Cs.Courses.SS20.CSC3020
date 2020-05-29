@@ -8,22 +8,12 @@ A collaborative space for CSC 3020: Java Programming!
 
 ## Lecture Videos
 
-### Week 01
-
-1. [Lecture 01 May 05](https://youtu.be/cyy-N56GGDg)
-1. [Lecture 02 May 07](https://youtu.be/NMc11n6eFKs)
-
-### Week 02
-
-1. [Lecture 03 May 12](https://youtu.be/yvQhRJXOQjM)
-1. [Lecture 04 May 14](https://youtu.be/Pmokntz8EMc)
-
-### Week 03
-
-1.[Lecture 05 May 19](https://youtu.be/A65-UPUq-MM)
-1.[Lecture 06 May 21](https://youtu.be/bmj4lYgo6pU)
-
-### Week 04
-
-1.[Lecture 07 May 26](https://youtu.be/cuKC1a59w68)
-
+| Lecture                            | Date   |
+| ---------------------------------- | ------ |
+| [1](https://youtu.be/cyy-N56GGDg) | May 05 | 
+| [2](https://youtu.be/NMc11n6eFKs)  | May 07 |
+| [3](https://youtu.be/yvQhRJXOQjM)  | May 12 |
+| [4](https://youtu.be/Pmokntz8EMc)  | May 14 |
+| [5](https://youtu.be/A65-UPUq-MM)  | May 19 |
+| [6](https://youtu.be/bmj4lYgo6pU)  | May 21 |
+| [7](https://youtu.be/cuKC1a59w68)  | May 26 |
