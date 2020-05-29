@@ -2,6 +2,7 @@ package lecture07.gn8271;
 //Lecture 07
 // Author: Raisa Zaman
 public class Lecture07Source {
+
     public static void main(String[] args) {
         Earth oEarth=new Earth();
         System.out.println(oEarth.circumferenceInMiles);
