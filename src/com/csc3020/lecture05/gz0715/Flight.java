@@ -1,6 +1,6 @@
 package com.csc3020.lecture05.gz0715;
 // Lecture 05: Class//
-public class Flight {
+public class Flight extends com.csc3020.lecture05.he7891.Flight {
     private int passengers;
     private int seats;
 
@@ -9,7 +9,7 @@ public class Flight {
         passengers = 0;
     }
 
-    void add1Passenger() {
+    public void add1Passenger() {
         if (passengers < seats)
             passengers += 1;
         else
