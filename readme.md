@@ -2,7 +2,7 @@
 
 A collaborative space for CSC 3020: Java Programming!
 
-##Attendance & Lab Spreadsheets
+## Attendance & Lab Spreadsheets
 
 [Google Drive](https://drive.google.com/file/d/1A4Sk_vyMTSlTJVk3tZUpeJ_5XB_8pwMC/view?usp=sharing)
 
