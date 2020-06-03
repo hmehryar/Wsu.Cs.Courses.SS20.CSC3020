@@ -1,75 +1,59 @@
-package com.csc3020.lecture06.ee7708;
+package lecture06.ee7708;
+// Lecture 05: Class//
+public class Flight {
 
-//Lecture 05: Flight Class + additional functionality
-//Author: Ian Kwiotek
-//Date: May 21, 2020
+    public int passengers;
+//    private int passengers;
+    public int seats;
 
-public class Flight
-{
-    private int passengers;
-    private int seats;
-
-    public Flight()
-    {
+    public Flight() {
         seats = 150;
         passengers = 0;
     }
 
-    public int getSeat()
-    {
+    public int getSeat(){
         return  seats;
     }
 
-    public void setSeats(int seats)
-    {
+    public void setSeats(int seats){
         this.seats=seats;
     }
 
-    public int getPassengers()
-    {
+
+    public int getPassengers() {
         return passengers;
     }
 
-    public void setPassengers(int passengers)
-    {
+    public void setPassengers(int passengers) {
         this.passengers = passengers;
     }
 
-    void add1Passenger()
-    {
-        if (passengers < seats)
-        {
-            passengers += 1;
-        }
 
+    public void add1Pass() {
+        if (passengers < seats)
+            passengers += 1;
         else
-        {
             handleTooMany();
-        }
     }
 
-    private void handleTooMany()
-    {
+    private void handleTooMany() {
         System.out.println("Too many!");
     }
 
-    public boolean hasRoom(Flight f2)
-    {
+    public boolean hasRoom(Flight f2) {
         int total = passengers + f2.passengers;
         return total <= seats;
     }
 
-    public  Flight createFlightWithBoth(Flight flightObj)
-    {
-        Flight newFlight = new Flight();
-        newFlight.seats = seats;
-        newFlight.passengers = this.passengers + flightObj.passengers;
+    public  Flight createFlightWithBoth(Flight flight2){
+        Flight newFlight=new Flight();
+        newFlight.seats=seats;
+        newFlight.passengers=this.passengers+flight2.passengers;
         return newFlight;
     }
 
-    public void print()
-    {
-        String str = "Flight[ seats= " + this.seats + ",passengers= " + this.passengers+"]";
+    public void print(){
+        String str="Flight[ seats= "+this.seats+",passengers= "+this.passengers+"]";
         System.out.println(str);
     }
 }
