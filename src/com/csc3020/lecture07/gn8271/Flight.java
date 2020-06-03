@@ -3,6 +3,7 @@ package lecture07.gn8271;
 // Author: Raisa Zaman
 // Lecture 07: Constructor//
 public class Flight {
+
     public int passengers;
     public int seats;
     private boolean [] isSeatAvailable;
