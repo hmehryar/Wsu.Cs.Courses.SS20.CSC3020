@@ -1,4 +1,4 @@
-package com.csc3020.lecture08.go1527;
+package csc3020.lecture09.hm;
 
 public class Passenger {
     private int checkedBags;
@@ -7,7 +7,6 @@ public class Passenger {
     public int getCheckedBags() {
         return checkedBags;
     }
-
     public void setCheckedBags(int checkedBags) {
         this.checkedBags = checkedBags;
     }
@@ -15,7 +14,6 @@ public class Passenger {
     public int getFreeBags() {
         return freeBags;
     }
-
     public void setFreeBags(int freeBags) {
         this.freeBags = freeBags;
     }
@@ -29,21 +27,25 @@ public class Passenger {
     public void setPerBagFee(double perBagFee) {
         this.perBagFee = perBagFee;
     }
+    public Passenger(){}
+    public Passenger(int freeBags){
+        this(freeBags>1?25.0d:50.0d);
+//          if(freeBags>1){
+//
+//              perBagFee=25.0d;
+//          }else{
+//              perBagFee=50.0d;
+//          }
 
-    public Passenger() {
+        this.freeBags=freeBags;
+
     }
-
-    public Passenger(int freeBags) {
-        this(freeBags > 1 ? 25.0d : 50.0d);
-        this.freeBags = freeBags;
-    }
-
-    public Passenger(int freeBags, int checkedBags) {
+    public Passenger(int freeBags,int checkedBags){
+        //this.freeBags=freeBags;
         this(freeBags);
-        this.checkedBags = checkedBags;
+        this.checkedBags=checkedBags;
     }
-
-    private Passenger(double perBagFee) {
-        this.perBagFee = perBagFee;
+    private Passenger(double perBagFee){
+        this.perBagFee=perBagFee;
     }
 }

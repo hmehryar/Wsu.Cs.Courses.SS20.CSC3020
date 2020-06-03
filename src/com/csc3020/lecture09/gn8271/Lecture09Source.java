@@ -1,9 +1,8 @@
-package lecture09.go1277;
-
-public class Lecture09Source
-{
-    public static void main(String[] args)
-    {
+package lecture09.gn8271;
+//Lecture 09
+// Author: Raisa Zaman
+public class Lecture09Source {
+    public static void main(String[] args) {
         CargoFlight cf = new CargoFlight();
         cf.add1Passenger();
         cf.print();
@@ -12,8 +11,8 @@ public class Lecture09Source
         cf.print();
 
         Flight f = new CargoFlight();
-        Passenger jane = new Passenger(0, 1);
-        f.add1Passenger(jane);
+        Passenger janet = new Passenger(0, 1);
+        f.add1Passenger(janet);
         //f.add1Package(1.0f, 2.5f, 3.0f);
 
         Flight[] squadron = new Flight[5];

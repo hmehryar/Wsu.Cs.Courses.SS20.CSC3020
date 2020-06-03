@@ -70,6 +70,5 @@ public class Lecture08Source {
         j = k;
         System.out.println(i);
         System.out.println(j);
-        ;
     }
 }

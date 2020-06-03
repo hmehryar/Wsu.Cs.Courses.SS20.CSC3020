@@ -1,5 +1,6 @@
-package lecture09.go1277;
-
+package lecture09.gn8271;
+//Lecture 09
+// Author: Raisa Zaman
 public class CargoFlight extends Flight {
     // Global variables
     public float maxCargoSpace = 1000.0f;
@@ -8,40 +9,32 @@ public class CargoFlight extends Flight {
 
     // Override Accessor & Mutator Functions
     @Override
-    public int getSeat()
-    {
+    public int getSeat() {
         return 12;
     }
 
 
-    public void add1Package(float h, float w, float d)
-    {
+    public void add1Package(float h, float w, float d) {
         double size = h * w * d;
 
-        if (hasCargoSpace(size))
-        {
+        if (hasCargoSpace(size)) {
             usedCargoSpace += size;
-        } else
-            {
+        } else {
             handleNoSpace();
         }
     }
 
-    private void handleNoSpace()
-    {
+    private void handleNoSpace() {
         System.out.println("Not enough space.");
     }
 
-    private boolean hasCargoSpace(double size)
-    {
+    private boolean hasCargoSpace(double size) {
         return usedCargoSpace + size <= maxCargoSpace;
     }
 
     @Override
-    public void print()
-    {
+    public void print() {
         super.print();
         System.out.println("[ Max Cargo Space = " + maxCargoSpace + ", Used Cargo Space = " +usedCargoSpace + " ]");
     }
 }
-
