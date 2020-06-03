@@ -4,6 +4,7 @@ package lecture07.gn8271;
 import java.util.concurrent.ScheduledExecutorService;
 
 public class Passenger {
+
     private int checkedBags;
     private int freeBags;
 

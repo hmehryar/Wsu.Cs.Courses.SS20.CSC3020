@@ -4,8 +4,40 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/hw01" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/hw02" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/hw02/gv7006" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture01" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture02" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture03" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture04" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture05" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture06" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture07" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture08" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/av7071" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/em0608" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/eu6179" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/fy2906" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/gg6997" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/gg8219" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/gi3399" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/gn2289" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/gn8271" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/go1277" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/go3480" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/go5334" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/go5621" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/gr4381" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/gs9945" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/gx0225" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/gz0715" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/hc7391" />
+      <excludeFolder url="file://$MODULE_DIR$/src/com/csc3020/lecture09/he7891" />
+      <excludeFolder url="file://$MODULE_DIR$/src/fp6266" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="CSC3020SS201" />
   </component>
 </module>
