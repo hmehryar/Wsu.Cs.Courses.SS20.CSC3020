@@ -1,10 +1,7 @@
-package lecture07.gn8271;
-//Lecture 07
-// Author: Raisa Zaman
-import java.util.concurrent.ScheduledExecutorService;
+package com.csc3020.lecture08.em0608;
+
 
 public class Passenger {
-
     private int checkedBags;
     private int freeBags;
 
@@ -32,6 +29,7 @@ public class Passenger {
         this.perBagFee = perBagFee;
     }
     public Passenger(){}
+
     public Passenger(int freeBags){
         this(freeBags>1?25.0d:50.0d);
 //          if(freeBags>1){

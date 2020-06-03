@@ -1,4 +1,4 @@
-package lecture07.gn8271;
+package lecture07.go1277;
 
 public class Earth {
     //long circumferenceInMiles;

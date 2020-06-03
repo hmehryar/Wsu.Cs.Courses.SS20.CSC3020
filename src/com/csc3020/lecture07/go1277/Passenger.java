@@ -1,10 +1,6 @@
-package lecture07.gn8271;
-//Lecture 07
-// Author: Raisa Zaman
-import java.util.concurrent.ScheduledExecutorService;
+package lecture07.go1277;
 
 public class Passenger {
-
     private int checkedBags;
     private int freeBags;
 

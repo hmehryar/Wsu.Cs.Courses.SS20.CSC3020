@@ -1,8 +1,7 @@
-package lecture07.gn8271;
-//Lecture 07
-// Author: Raisa Zaman
-public class Lecture07Source {
+package lecture07.go1277;
 
+public class Lecture07Source
+{
     public static void main(String[] args) {
         Earth oEarth=new Earth();
         System.out.println(oEarth.circumferenceInMiles);
@@ -35,5 +34,5 @@ public class Lecture07Source {
         joe=new Passenger(1);
         System.out.println(joe.getFreeBags()+","+joe.getCheckedBags()+","+joe.getPerBagFee() );
     }
-}
 
+}
