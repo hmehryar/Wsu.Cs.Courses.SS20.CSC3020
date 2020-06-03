@@ -1,9 +1,9 @@
-package com.csc3020.lecture08.go1527;
+package com.csc3020.lecture09.go1527;
 
 public class Flight {
 
-    private int seats;
-    private int passengers;
+    public int seats;
+    public int passengers;
     private boolean[] isSeatAvailable;
     private int flightNumber;
     private char flightClass;
@@ -33,6 +33,18 @@ public class Flight {
     public Flight(char flightClass) {
         this();
         this.flightClass = flightClass;
+    }
+
+
+    @Override
+    public boolean equals(Object o){
+        if(!(o instanceof Flight)){
+            return false;
+        }
+
+        Flight other=(Flight)o;
+        return flightClass==other.flightClass &&
+                flightNumber==other.flightNumber;
     }
 
     public int getSeats() {
