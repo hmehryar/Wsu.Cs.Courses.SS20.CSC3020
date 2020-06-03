@@ -1,5 +1,5 @@
 package com.csc3020.lecture07.gr4381;
-
+// Author:  Matthew Martin
 public class Lecture07Source {
     public static void main(String[] args) {
         Earth oEarth = new Earth();
