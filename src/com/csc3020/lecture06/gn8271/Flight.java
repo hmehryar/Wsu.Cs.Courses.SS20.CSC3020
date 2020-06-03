@@ -1,6 +1,7 @@
 package com.csc3020.lecture06.gn8271;
 
 public class Flight {
+
     private int passengers;
     private int seats;
 
