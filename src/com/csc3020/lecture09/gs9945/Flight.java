@@ -11,6 +11,8 @@ public class Flight {
     private int totalCheckedBags;
     private int flightNumber;
     private char flightClass;
+
+
     {
         seats = 150;
         maxCarryOns = 2 * seats;
@@ -21,7 +23,7 @@ public class Flight {
         }
         totalCarryOns = 0;
         totalCheckedBags = 0;
-    } // initialization block
+    }
 
     public Flight() {
 
@@ -97,9 +99,6 @@ public class Flight {
     public void add1Passenger(Passenger p, int carryOns){
         add1Passenger(p.getCheckedBags(), carryOns);
     }
-
-
-
     private boolean hasSeating(){
         return passengers < seats;
     }

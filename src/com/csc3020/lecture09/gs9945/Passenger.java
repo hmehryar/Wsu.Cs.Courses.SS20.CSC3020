@@ -27,11 +27,6 @@ public class Passenger {
     public Passenger(){}
     public Passenger(int freeBags){
         this(freeBags > 1 ? 25.0d : 50.0d);
-//        if (freeBags > 1){
-//            perBagFee = 25.0d;
-//        } else{
-//            perBagFee = 50.0d;
-//        }
         this.freeBags = freeBags;
     }
     public Passenger(int freeBags, int checkedBags){
