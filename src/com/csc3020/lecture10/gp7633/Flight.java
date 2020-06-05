@@ -1,4 +1,4 @@
-package com.csc3020.lecture09.gp7633;
+package com.csc3020.lecture10.gp7633;
 
 // Lecture 05: Class//
 public class Flight {
@@ -38,6 +38,9 @@ public class Flight {
 
     @Override
     public boolean equals(Object o) {
+        if (super.equals(o)) {
+            return true;
+        }
         if (!(o instanceof Flight)) {
             return false;
         }
