@@ -1,5 +1,5 @@
 package csc3020.hw01.hm;
-
+//Homework 01 implementation
 public class Hw01Source {
     public static void main(String[] args) {
         double[] leftValues={100.0, 25.0 ,225.0, 11.0};
