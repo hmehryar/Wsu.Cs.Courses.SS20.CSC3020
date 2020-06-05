@@ -1,9 +1,9 @@
-package com.csc3020.lecture09.gp7633;
+package com.csc3020.lecture10.go3480;
 
-// Lecture 05: Class//
 public class Flight {
-    public int passengers;
+
     public int seats;
+    private int passengers;
     private boolean[] isSeatAvailable;
     private int flightNumber;
     private char flightClass;
@@ -11,26 +11,22 @@ public class Flight {
     private int totalCheckedBags;
 
     {
-        isSeatAvailable = new boolean[seats];
-        for (int index = 0; index < seats; index++) {
-            isSeatAvailable[index] = true;
-        }
         seats = 150;
         passengers = 0;
-        totalCarryOns = 0;
+        isSeatAvailable = new boolean[seats];
+        for (int i = 0; i < seats; i++) {
+            isSeatAvailable[i] = true;
+        }
         maxCarryOns = seats * 2;
+        totalCarryOns = 0;
         totalCheckedBags = 0;
     }
 
-
-    public Flight() {
-    }
-
-    public Flight (int fNumber) {
+    public Flight() {}
+    public Flight(int flightNumber) {
         this();
-        this.flightNumber = fNumber;
+        this.flightNumber = flightNumber;
     }
-
     public Flight(char flightClass) {
         this();
         this.flightClass = flightClass;
@@ -38,33 +34,44 @@ public class Flight {
 
     @Override
     public boolean equals(Object o) {
+        if (super.equals(o)) {
+            return true;
+        }
         if (!(o instanceof Flight)) {
             return false;
         }
+
         Flight other = (Flight) o;
-        return flightClass == other.flightClass && flightNumber == other.flightNumber;
+        return flightClass == other.flightClass
+                && flightNumber == other.flightNumber;
     }
 
-    public int getSeat(){
-        return  150;
+    public int getSeats() {
+        return seats;
     }
-    public void setSeats(int seats){
-        this.seats=seats;
+    public void setSeats(int seats) {
+        this.seats = seats;
     }
+
+    public int getFlightNumber() {
+        return flightNumber;
+    }
+    public void setFlightNumber(int flightNumber) {
+        this.flightNumber = flightNumber;
+    }
+
+    public char getFlightClass() {
+        return flightClass;
+    }
+    public void setFlightClass(char flightClass) {
+        this.flightClass = flightClass;
+    }
+
     public int getPassengers() {
         return passengers;
     }
     public void setPassengers(int passengers) {
         this.passengers = passengers;
-    }
-
-
-    public void setFlightNumber(int flightNumber) {
-        this.flightNumber = flightNumber;
-    }
-
-    public int getFlightNumber() {
-        return flightNumber;
     }
 
     public void add1Passenger() {
@@ -73,28 +80,21 @@ public class Flight {
         else
             handleTooMany();
     }
-
     public void add1Passenger(int bags) {
         if (hasSeating()) {
             add1Passenger();
             totalCheckedBags += bags;
         }
     }
-
     public void add1Passenger(Passenger p) {
-        if (hasSeating())
-            add1Passenger(p.getCheckedBags());
+        add1Passenger(p.getCheckedBags());
     }
-
     public void add1Passenger(int bags, int carryOns) {
-       // System.out.println("Inside the method");
         if (hasSeating() && hasCarryOnSpace(carryOns)) {
-          //  System.out.println("Inside the condition");
             add1Passenger(bags);
             totalCarryOns += carryOns;
         }
     }
-
     public void add1Passenger(Passenger p, int carryOns) {
         add1Passenger(p.getCheckedBags(), carryOns);
     }
@@ -102,16 +102,24 @@ public class Flight {
     private boolean hasSeating() {
         return passengers < seats;
     }
-
     private boolean hasCarryOnSpace(int carryOns) {
-        return  totalCarryOns + carryOns <= maxCarryOns;
+        return totalCarryOns + carryOns <= maxCarryOns;
     }
     private void handleTooMany() {
-        System.out.println("Too many!");
+        System.out.println("Too many!!!");
     }
-
+    public boolean hasRoom(Flight f2) {
+        int total = passengers + f2.passengers;
+        return total <= seats;
+    }
+    public Flight createFlightWithBoth(Flight f2) {
+        Flight newFlight = new Flight();
+        newFlight.seats = seats;
+        newFlight.passengers = this.passengers+f2.passengers;
+        return newFlight;
+    }
     public void print(){
-        String str="Flight [ seats = "+this.seats+", passengers = "+this.passengers+"]";
+        String str = "Flight [seats = "+this.seats+", passengers = "+this.passengers+"]";
         System.out.println(str);
     }
 }
