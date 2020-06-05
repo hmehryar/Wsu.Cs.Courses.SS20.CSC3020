@@ -17,3 +17,19 @@ A collaborative space for CSC 3020: Java Programming!
 | [5  Representing Complex Types with Classes](https://youtu.be/A65-UPUq-MM)  | May 19 |
 | [6  Representing Complex Types with Classes - Part 2](https://youtu.be/bmj4lYgo6pU)  | May 21 |
 | [7  Class Initializers and Constructors](https://youtu.be/cuKC1a59w68)  | May 26 |
+| [8  A Closer Look at Parameters](https://youtu.be/OWVOqb75lPE)  | May 28 |
+
+## Version Control References
+
+### CLI
+
+[Getting Started - The Command Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+
+### IntelliJ IDEA
+
+[Using-Git-Integration](https://www.jetbrains.com/help/idea/using-git-integration.html)
+
+* [Set up a Git repository](https://www.jetbrains.com/help/idea/set-up-a-git-repository.html)
+* [Sync with a remote Git repository](https://www.jetbrains.com/help/idea/sync-with-a-remote-repository.html)
+* [Commit and push changes to Git repository](https://www.jetbrains.com/help/idea/commit-and-push-changes.html)
+* [Resolve Git conflicts](https://www.jetbrains.com/help/idea/resolve-conflicts.html)
