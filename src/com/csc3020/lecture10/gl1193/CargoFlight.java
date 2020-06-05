@@ -1,6 +1,6 @@
 package com.csc3020.lecture10.gl1193;
 
-import com.csc3020.lecture09.gl1193.Flight;
+//import com.csc3020.lecture09.gl1193.Flight;
 
 public class CargoFlight extends Flight {
     float maxCargoSpace=1000.0f;
