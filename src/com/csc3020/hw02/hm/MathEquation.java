@@ -5,6 +5,7 @@ public class MathEquation {
     double rightValue;
     double result;
     char opCode;
+
     void Execute(){
         switch (opCode){
             case 'a':
