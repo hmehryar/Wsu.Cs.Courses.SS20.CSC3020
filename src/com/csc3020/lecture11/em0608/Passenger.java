@@ -1,7 +1,6 @@
-package com.csc3020.lecture08.em0608;
+package com.csc3020.lecture11.em0608;
 
-
-public class Passenger {
+ public class Passenger {
     private int checkedBags;
     private int freeBags;
 
@@ -51,4 +50,5 @@ public class Passenger {
         this.perBagFee=perBagFee;
     }
 }
+
 

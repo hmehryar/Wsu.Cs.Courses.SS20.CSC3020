@@ -23,14 +23,16 @@ public class homework2 {
 
         /* operation codes */
         char[] opCodes = {'a','s','m','d'};
-        
+
+        MathFunction math = new MathFunction(lOperands, rOperands);
+
         /* begin printing inputs (i.e. operands) */
         System.out.println();
         System.out.println("INPUTS");
         System.out.println("------");
         printOperands(lOperands, 'l'); // print left values
         printOperands(rOperands, 'r'); // print right values
-        
+
         /* begin calculating and printing outputs */
         System.out.println();
         System.out.println("OUTPUTS");
@@ -38,15 +40,13 @@ public class homework2 {
 
         for (char op : opCodes) { // enter loop to iterate over opCodes
             printOperation(op);   // print operation name
-            for (int i = 0; i < 4; i++) { // iterate over lVals and rVals
-                MathFunction math = new MathFunction(lOperands[i], rOperands[i], op);
-                math.execute();
-            }
+            math.setOpCode(op);   // set opCode
+            math.execute();       // execure operation
             System.out.println(); // end with a line break for easier readbility
         }
 
     }
-    
+
     /* print out current operation determined by opCode */
     /* separated from main for readability */
     private static void printOperation(char opCode) {
@@ -71,10 +71,10 @@ public class homework2 {
 
     /* function for looping over lOperands and rOperands and printing their contents */
     private static void printOperands(double[] operands, char side) {
-       
+
         /* number formatting object, used in system print function */
         DecimalFormat ft = new DecimalFormat("#.###");
-        
+
         System.out.print((side == 'l') ? "left values:\t" : "right values:\t");
         for (double num : operands) {
             System.out.print(ft.format(num) + "\t");
