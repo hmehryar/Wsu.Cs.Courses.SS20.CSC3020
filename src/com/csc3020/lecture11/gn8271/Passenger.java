@@ -1,5 +1,5 @@
 package lecture11.gn8271;
-//Lecture 10
+//Lecture 11
 // Author: Raisa Zaman
 public class Passenger {
 
