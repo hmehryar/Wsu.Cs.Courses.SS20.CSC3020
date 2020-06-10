@@ -14,41 +14,46 @@ public class MathFunction {
 
     // public fields
     public char opCode;
-    public double lOperand;
-    public double rOperand;
+    public double[] lOperands;
+    public double[] rOperands;
 
     // constructor
-    MathFunction(double lOp, double rOp, char opCode) {
-        create(lOp, rOp, opCode);
+    MathFunction(double[] lOps, double[] rOps) {
+        create(lOps, rOps);
     }
 
-    public void create(double leftOp, double rightOp, char opCode) {
+    public void create(double[] leftOps, double[] rightOps) {
+        this.lOperands = leftOps;
+        this.rOperands = rightOps;
+    }
+
+    public void setOpCode(char opCode) {
         this.opCode = opCode;
-        this.lOperand = leftOp;
-        this.rOperand = rightOp;
     }
 
     public void execute() {
         /* number formatting object, used in system print function */
         DecimalFormat ft = new DecimalFormat("#.###");
 
-        /* switch for determining current operation */
-        switch (this.opCode) {
-            case 'a':
-                System.out.print(ft.format(this.lOperand + this.rOperand) + "\t");
-                break;
-            case 's':
-                System.out.print(ft.format(this.lOperand - this.rOperand) + "\t");
-                break;
-            case 'm':
-                System.out.print(ft.format(this.lOperand * this.rOperand) + "\t");
-                break;
-            case 'd':
-                System.out.print(ft.format(this.lOperand / this.rOperand) + "\t");
-                break;
-            default:
-                System.out.print("Error: invalid opCode '" + this.opCode + "'");
-                break;
+        for (int i = 0; i < 4; i++) {
+            /* switch for determining current operation */
+            switch (this.opCode) {
+                case 'a':
+                    System.out.print(ft.format(this.lOperands[i] + this.rOperands[i]) + "\t");
+                    break;
+                case 's':
+                    System.out.print(ft.format(this.lOperands[i] - this.rOperands[i]) + "\t");
+                    break;
+                case 'm':
+                    System.out.print(ft.format(this.lOperands[i] * this.rOperands[i]) + "\t");
+                    break;
+                case 'd':
+                    System.out.print(ft.format(this.lOperands[i] / this.rOperands[i]) + "\t");
+                    break;
+                default:
+                    System.out.print("Error: invalid opCode '" + this.opCode + "'");
+                    break;
+            }
         }
     }
 }
