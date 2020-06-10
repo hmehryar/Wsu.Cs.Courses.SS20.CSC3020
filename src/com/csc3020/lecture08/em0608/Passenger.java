@@ -51,3 +51,4 @@ public class Passenger {
         this.perBagFee=perBagFee;
     }
 }
+
