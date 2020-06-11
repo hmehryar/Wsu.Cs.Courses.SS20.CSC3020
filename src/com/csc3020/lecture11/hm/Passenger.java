@@ -1,7 +1,6 @@
-package com.csc3020.lecture08.em0608;
+package csc3020.lecture11.hm;
 
-
-public class Passenger {
+ public class Passenger {
     private int checkedBags;
     private int freeBags;
 
@@ -29,7 +28,6 @@ public class Passenger {
         this.perBagFee = perBagFee;
     }
     public Passenger(){}
-
     public Passenger(int freeBags){
         this(freeBags>1?25.0d:50.0d);
 //          if(freeBags>1){
@@ -42,7 +40,7 @@ public class Passenger {
         this.freeBags=freeBags;
 
     }
-    public Passenger(int freeBags,int checkedBags){
+    public Passenger(int freeBags, int checkedBags){
         //this.freeBags=freeBags;
         this(freeBags);
         this.checkedBags=checkedBags;
@@ -51,4 +49,3 @@ public class Passenger {
         this.perBagFee=perBagFee;
     }
 }
-
