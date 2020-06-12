@@ -1,7 +1,12 @@
-package lecture11.av7071;//package com.csc3020.lecture07.av7071;
+package lecture12.av7071;//package com.csc3020.lecture07.av7071;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
 
 // Lecture 07: Class//
 public class Flight {
+    static final int MAX_FAA_SEATS = 550;
     public int passengers;
     public int seats;
     private boolean[] isSeatAvailable;
@@ -122,6 +127,22 @@ public class Flight {
 
     public void add1Passenger(Passenger p, int carryOns) {
         add1Passenger( p.getCheckedBags(), carryOns);
+    }
+
+    public void addPassengers(String fileName) throws IOException {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(fileName));
+            String line = null;
+            while((line = reader.readLine()) != null) {
+                String[] parts = line.split(" ");
+            passengers += Integer.valueOf( parts[0]);
+            }
+        } finally {
+
+            if(reader != null)
+        reader.close();
+        }
     }
 
     private boolean hasSeating(){
