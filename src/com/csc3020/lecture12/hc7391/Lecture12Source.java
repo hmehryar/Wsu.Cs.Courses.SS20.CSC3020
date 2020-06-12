@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class Lecture12 {
+public class Lecture12Source {
 
     public static void main(String[] args) {
 	// write your code here
