@@ -1,5 +1,7 @@
 package com.csc3020.hw02.gg8219;
 
+//Ashraf Uddin
+
 public class MathEquation {
     //Add 4 public fields
     public char opCode;

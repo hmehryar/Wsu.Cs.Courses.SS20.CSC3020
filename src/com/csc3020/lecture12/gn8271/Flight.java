@@ -1,15 +1,22 @@
-package lecture11.av7071;//package com.csc3020.lecture07.av7071;
+package lecture12.gn8271;
+//Lecture 12
+// Author: Raisa Zaman
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 
-// Lecture 07: Class//
+// Lecture 05: Class//
 public class Flight {
+    static final int MAX_FAA_SEATS = 550;
     public int passengers;
     public int seats;
     private boolean[] isSeatAvailable;
     private Integer flightNumber;
     private Character flightClass;
     private int maxCarryOns, totalCarryOns;
+    //     = seats * 2
     private int totalCheckedBags;
-
     {
         seats = 150;
         passengers = 0;
@@ -18,8 +25,8 @@ public class Flight {
             isSeatAvailable[index]=true;
         }
         maxCarryOns = seats * 2;
-        totalCarryOns = 0;
-        totalCheckedBags = 0;
+        totalCarryOns=0;
+        totalCheckedBags=0;
     }
 
 
@@ -36,37 +43,37 @@ public class Flight {
         this.flightClass=flightClass;
     }
 
+
     @Override
     public String toString() {
 //        return "Flight{" +
 //                "flightNumber=" + flightNumber +
 //                ", flightClass=" + flightClass +
-//                "}" ;
-        if (flightNumber != null) {
-            return "Flight #" + flightNumber;
-        } else if (flightClass != null) {
-            return "Flight Class " + flightClass;
-        } else {
+//                '}';
+        if(flightNumber!=null){
+            return "Flight #"+flightNumber;
+        }else if (flightClass!=null){
+            return "Flight Class "+flightClass;
+        }else{
             return "Flight identity is not set";
         }
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (super.equals(o)) {
+    public boolean equals(Object o){
+        if (super.equals(o)){
             return true;
         }
-        if (!(o instanceof Flight)) {
+        if (!(o instanceof Flight)){
             return false;
         }
-        Flight other = (Flight) o;
+        Flight other=(Flight)o;
         return
-                flightClass == other.flightClass &&
-                flightNumber == other.flightNumber;
+                flightClass==other.flightClass &&
+                        flightNumber==other.flightNumber;
     }
-
     public int getSeat(){
-        return  seats;
+        return  150;
     }
     public void setSeats(int seats){
         this.seats=seats;
@@ -89,49 +96,59 @@ public class Flight {
     public int getPassengers() {
         return passengers;
     }
+
     public void setPassengers(int passengers) {
         this.passengers = passengers;
     }
 
     public void add1Passenger() {
-        if ( hasSeating() )
+        if (hasSeating())
             passengers += 1;
         else
             handleTooMany();
     }
-
-    public void add1Passenger(int bags) {
-        if( hasSeating() ) {
+    public void add1Passenger(int bags){
+        if(hasSeating()){
             add1Passenger();
-            totalCheckedBags += bags;
+            totalCheckedBags+=bags;
         }
     }
-
-    public void add1Passenger(Passenger p) {
-        add1Passenger( p.getCheckedBags() );
+    public void add1Passenger(Passenger p){
+        add1Passenger(p.getCheckedBags());
     }
-
-    public void add1Passenger(int bags, int carryOns) {
-//        System.out.println("Inside the method");
-        if ( hasSeating() && hasCarryOnSpace(carryOns) ) {
-//            System.out.println("Inside the condition");
+    public void add1Passenger(int bags, int carryOns){
+        //System.out.println("Inside the method");
+        if (hasSeating()&& hasCarryOnSpace(carryOns)){
+            //System.out.println("Inside the condition");
             add1Passenger(bags);
-            totalCarryOns += carryOns;
+            totalCarryOns+=carryOns;
         }
     }
+    public void add1Passenger(Passenger p, int carryOns){
+        add1Passenger(p.getCheckedBags(),carryOns);
+    }
+    public void addPassengers(String fileName) throws IOException {
+        BufferedReader reader=null;
+        try{
+            reader =new BufferedReader(new FileReader(fileName));
+            String line=null;
+            while((line=reader.readLine())!=null){
+                String[] parts= line.split(" ");
+                passengers+=Integer.valueOf( parts[0]);
+            }
+        }finally {
 
-    public void add1Passenger(Passenger p, int carryOns) {
-        add1Passenger( p.getCheckedBags(), carryOns);
+            if(reader!=null)
+                reader.close();
+        }
     }
 
     private boolean hasSeating(){
         return passengers < seats;
     }
-
-    private boolean hasCarryOnSpace(int carryOns) {
-        return totalCarryOns + carryOns <= maxCarryOns;
+    private boolean hasCarryOnSpace(int carryOns){
+        return totalCarryOns+carryOns<=maxCarryOns;
     }
-
     private void handleTooMany() {
         System.out.println("Too many!");
     }
@@ -140,7 +157,7 @@ public class Flight {
         int total = passengers + f2.passengers;
         return total <= seats;
     }
-    public Flight createFlightWithBoth(Flight flight2){
+    public  Flight createFlightWithBoth(Flight flight2){
         Flight newFlight=new Flight();
         newFlight.seats=seats;
         newFlight.passengers=this.passengers+flight2.passengers;
@@ -151,3 +168,5 @@ public class Flight {
         System.out.println(str);
     }
 }
+
+
