@@ -1,4 +1,4 @@
-package com.csc3020.hw01.gn8271;
+package hw01.gn8271;
 ///Lecture 04 - Homework01
 // Author: Raisa Zaman
 // Input:
