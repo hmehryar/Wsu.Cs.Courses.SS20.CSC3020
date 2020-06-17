@@ -1,4 +1,4 @@
-package lecture12.go1277;
+package lecture12.go12777;
 //Lecture 12
 // Author: Tia Gijo
 public class Passenger {
