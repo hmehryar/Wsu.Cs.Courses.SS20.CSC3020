@@ -1,4 +1,4 @@
-package com.csc3020.lecture13.gl1193;
+package com.csc3020.lecture13.gl1193.hmehryar.travel;
 
 import com.csc3020.lecture12.gl1193.Flight;
 

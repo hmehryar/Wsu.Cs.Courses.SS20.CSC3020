@@ -1,4 +1,4 @@
-package com.csc3020.lecture13.gl1193;
+package com.csc3020.lecture13.gl1193.hmehryar.travel;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
