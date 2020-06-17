@@ -2,10 +2,13 @@ package lecture13.gg6997;
 
 //package com.msingh.travel;
 
-import com.csc3020.lecture11.gg6997.Flight;
 import lecture12.gg6997.CargoFlight;
+
+import lecture13.gg6997.msingh.travel.*;
 //import lecture13.gg6997.msingh.travel.Flight;
-import lecture13.gg6997.msingh.travel.Passenger;
+//import lecture13.gg6997.msingh.travel.Passenger;
+
+//import lecture13.gg6997.xyzcompany.*;
 import lecture13.gg6997.xyzcompany.bar.Beer;
 import lecture13.gg6997.xyzcompany.bar.Wine;
 
