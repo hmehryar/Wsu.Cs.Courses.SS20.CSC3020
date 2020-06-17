@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: com.csc3020.hw02.Main
-
