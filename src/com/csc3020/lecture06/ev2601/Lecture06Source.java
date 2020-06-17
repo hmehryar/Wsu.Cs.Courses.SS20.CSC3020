@@ -1,8 +1,8 @@
-package com.csc3020.lecture06.ev2601;
+package csc3020.lecture06.ev2601;
 
 import csc3020.lecture05.ev2601.Flight;
 
-public class lecture06source {
+public class Lecture06Source {
     public static void main(String[] args) {
         Flight lax1 = new Flight("lax1");
         Flight lax2 = new Flight("lax2");
@@ -25,6 +25,6 @@ public class lecture06source {
         //Accessors and Mutator
         Flight slcToNyc = new Flight("slcToNyc");
         slcToNyc.setSeats(250);
-        System.out.println(slcToNyc.getSeat());
+        System.out.println(slcToNyc.getSeats());
     }
 }
