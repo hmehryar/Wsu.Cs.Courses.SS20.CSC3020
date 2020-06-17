@@ -9,7 +9,7 @@ import csc3020.lecture13.ev2601.lukebelinc.travel.Flight;
 
 // Beer type
 // Wine type
-import csc3020.lecture13.ev2601.xyzcompany.bar.*;
+import csc3020.lecture13.ev2601.xyzcomapny.bar.*;
 
 public class Lecture13Source {
 
