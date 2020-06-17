@@ -3,6 +3,7 @@ package com.csc3020.lecture13.gg8219.auddin.travel;
 public class Passenger {
     private int checkedBags;
     private final int freeBags ;
+    private Flight relatedFlight;
 
     public int getCheckedBags() {
         return checkedBags;
@@ -28,6 +29,8 @@ public class Passenger {
     }
     public Passenger(){
         freeBags = 0;
+        relatedFlight=new Flight();
+        relatedFlight.legacyFlightNumber=0;
     }
     public Passenger(int freeBags){
         //this(freeBags>1?25.0d:50.0d);

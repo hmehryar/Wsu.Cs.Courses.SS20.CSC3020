@@ -1,13 +1,12 @@
 package com.csc3020.lecture13.gg8219.auddin.travel;
 
-import com.csc3020.lecture12.gg8219.Passenger;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 // Lecture 05: Class//
 public class Flight {
+    protected int legacyFlightNumber;
     static final int MAX_FAA_SEATS = 550;
     public int passengers;
     public int seats;
@@ -166,5 +165,8 @@ public class Flight {
     public void print(){
         String str="Flight[ seats= "+this.seats+",passengers= "+this.passengers+"]";
         System.out.println(str);
+    }
+    private class LittleFlight{
+
     }
 }
