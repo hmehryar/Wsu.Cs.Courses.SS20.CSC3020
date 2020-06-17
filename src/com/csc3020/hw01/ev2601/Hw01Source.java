@@ -11,7 +11,7 @@ package csc3020.hw01.ev2601; // package info
 import java.text.DecimalFormat; // used in calculate and printOperands 
 
 /* begin class */
-public class homework1 {
+public class Hw01Source {
 
     /* main function */
     public static void main(String[] args) {

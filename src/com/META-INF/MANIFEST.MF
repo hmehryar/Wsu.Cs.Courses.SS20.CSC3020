@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Main-Class: csc3020.hw01.ev2601.Hw01Source
