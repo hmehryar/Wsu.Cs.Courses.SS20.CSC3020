@@ -3,6 +3,7 @@ package hw02.gn8271;
 public class Hw02Source {
     public static void main(String[] args) {
         // variable declaration
+
         double [] val1 = {100.0,25.0,225.0,11.0};
         double [] val2 = {50.0,92.0,17.0,3.0};
         char [] operation = {'a','s','d','m'};

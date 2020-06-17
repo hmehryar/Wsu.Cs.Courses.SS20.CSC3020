@@ -4,6 +4,7 @@ public class MathEquation {
     // The constructor for MathEquation class
     MathEquation(double val1, double val2, char operation) {
         // Initializing the for class members variables
+
         this.leftValue= val1;
         this.rightValue = val2;
         this.opCode = operation;
