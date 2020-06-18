@@ -1,8 +1,6 @@
 package com.csc3020.lecture13.em0608;
 
-import com.csc3020.lecture13.em0608.travel.CargoFlight;
-import com.csc3020.lecture13.em0608.travel.Flight;
-import com.csc3020.lecture13.em0608.travel.Passenger;
+import com.csc3020.lecture13.em0608.travel.*;
 import com.csc3020.lecture13.em0608.xyzcompany.bar.*;
 
 //import com.csc3020.lecture13.em0608.travel.Flight;
@@ -18,9 +16,9 @@ public class Lecture13Source {
         CargoFlight cargoFlight = new CargoFlight();
 
         Flight lax175 = new Flight(175);
-        Beer liteBeer = new Beer();
-        Passenger oPassenger = new Passenger();
-        Wine merlot = new Wine();
+        com.csc3020.lecture13.em0608.xyzcompany.bar.Beer liteBeer = new com.csc3020.lecture13.em0608.xyzcompany.bar.Beer();
+        com.csc3020.lecture13.em0608.travel.Passenger oPassenger = new com.csc3020.lecture13.em0608.travel.Passenger();
+        com.csc3020.lecture13.em0608.xyzcompany.bar.Wine merlot = new com.csc3020.lecture13.em0608.xyzcompany.bar.Wine();
 
       //  lax175.flightnumber
         lax175.getFlightNumber();

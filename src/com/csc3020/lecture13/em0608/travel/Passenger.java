@@ -1,6 +1,8 @@
 package com.csc3020.lecture13.em0608.travel;
 
- public class Passenger {
+import com.csc3020.lecture13.em0608.travel.Flight;
+
+public class Passenger {
     private int checkedBags;
     private final int freeBags;
     private Flight relatedFlight;

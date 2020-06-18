@@ -48,10 +48,10 @@ public class Flight {
         if(super.equals(o)) {
             return true;
         }
-        if (!(o instanceof Flight)){
+        if (!(o instanceof com.csc3020.lecture13.em0608.travel.Flight)){
             return false;
         }
-        Flight other=(Flight)o;
+        com.csc3020.lecture13.em0608.travel.Flight other=(com.csc3020.lecture13.em0608.travel.Flight)o;
         return
                 flightClass==other.flightClass &&
                         flightNumber==other.flightNumber;
@@ -114,7 +114,7 @@ public class Flight {
             totalCheckedBags+=bags;
         }
     }
-    public void add1Passenger(Passenger p){
+    public void add1Passenger(com.csc3020.lecture13.em0608.travel.Passenger p){
         add1Passenger(p.getCheckedBags());
     }
     public void add1Passenger(int bags, int carryOns){
@@ -125,7 +125,7 @@ public class Flight {
             totalCarryOns+=carryOns;
         }
     }
-    public void add1Passenger(Passenger p, int carryOns){
+    public void add1Passenger(com.csc3020.lecture13.em0608.travel.Passenger p, int carryOns){
         add1Passenger(p.getCheckedBags(),carryOns);
     }
 
@@ -156,12 +156,12 @@ public class Flight {
         System.out.println("Too many!");
     }
 
-    public boolean hasRoom(Flight f2) {
+    public boolean hasRoom(com.csc3020.lecture13.em0608.travel.Flight f2) {
         int total = passengers + f2.passengers;
         return total <= seats;
     }
-    public Flight createFlightWithBoth(Flight flight2){
-        Flight newFlight=new Flight();
+    public com.csc3020.lecture13.em0608.travel.Flight createFlightWithBoth(com.csc3020.lecture13.em0608.travel.Flight flight2){
+        com.csc3020.lecture13.em0608.travel.Flight newFlight=new com.csc3020.lecture13.em0608.travel.Flight();
         newFlight.seats=seats;
         newFlight.passengers=this.passengers+flight2.passengers;
         return newFlight;
