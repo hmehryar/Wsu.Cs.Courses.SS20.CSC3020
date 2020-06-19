@@ -1,7 +1,13 @@
-package csc3020.lecture10.gr4381;
+package csc3020.lecture14.gr4381;
 
-// Lecture 05: Class//
-public class Flight {
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Iterator;
+
+public class Flight implements Comparable<Flight>, Iterable<Person>{
+    protected int legacyFlightNumber;
+    static final int MAX_FAA_SEATS = 550;
     private int passengers;
 //    public int seats;
     private int seats;
@@ -9,8 +15,12 @@ public class Flight {
     private int totalCarryOns;
     private int maxCarryOns;
     private int totalCheckedBags;
-    private int flightNumber;
-    private char flightClass;
+    private int flightTime; // minutes past midnight
+    private CrewMember[] crew;
+    private Passenger[] roster;
+
+    private Integer flightNumber;
+    private Character flightClass;
     {
         seats = 150;
         maxCarryOns = 2 * seats;
@@ -45,6 +55,67 @@ public class Flight {
         this();
         this.flightClass = flightClass;
     }
+
+//    @Override
+//    public int compareTo(Object o) {
+//        Flight f = (Flight) o;
+//        if (flightTime < f.flightTime)
+//            return -1;
+//        else if (flightTime > f.flightTime)
+//            return 1;
+//        else
+//            return 0;
+//    }
+
+
+    @Override
+    public int compareTo(Flight o) {
+        return flightTime - o.flightTime;
+//        if (flightTime < o.flightTime)
+//            return -1;
+//        else if (flightTime > o.flightTime)
+//            return 1;
+//        else
+//            return 0;
+    }
+
+
+//    @Override
+//    public String toString(){
+//        if (flightNumber != null){
+//            return "Flight #" + flightNumber;
+//        } else if (flightClass != null){
+//            return "Flight Class" + flightClass;
+//        } else {
+//            return "Flight identity is not set";
+//
+//        }
+//    }
+
+    @Override
+    public String toString() {
+        return "Flight{" +
+                "passengers=" + passengers +
+                ", seats=" + seats +
+                ", maxCarryOns=" + maxCarryOns +
+                ", totalCheckedBags=" + totalCheckedBags +
+                ", flightTime=" + flightTime +
+                ", flightNumber=" + flightNumber +
+                ", flightClass=" + flightClass +
+                '}';
+    }
+
+    @Override
+    public Iterator<Person> iterator() {
+        return new FlightIterator(crew, roster);
+    }
+
+//    @Override
+//    public String toString() {
+//        return "Flight{" +
+//                "flightNumber=" + flightNumber +
+//                '}';
+//    }
 
     @Override
     public boolean equals(Object o){
@@ -85,6 +156,12 @@ public class Flight {
     public void setFlightClass(char flightClass) {
         this.flightClass = flightClass;
     }
+    public int getFlightTime() {
+        return flightTime;
+    }
+    public void setFlightTime(int flightTime) {
+        this.flightTime = flightTime;
+    }
 
     public void add1Passenger() {
         if (hasSeating())
@@ -111,7 +188,21 @@ public class Flight {
         add1Passenger(p.getCheckedBags(), carryOns);
     }
 
-
+    public void addPassengers(String filename) throws IOException {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(filename));
+            String line = null;
+            while ((line = reader.readLine()) != null) {
+                String[] parts = line.split(" ");
+                passengers += Integer.valueOf(parts[0]);
+            }
+        } finally {
+            if (reader != null) {
+                reader.close();
+            }
+        }
+    }
 
     private boolean hasSeating(){
         return passengers < seats;
@@ -136,5 +227,13 @@ public class Flight {
     public void print(){
         String str = "Flight[seats = " + this.seats + ", passengers = " + this.passengers + "]";
         System.out.println(str);
+    }
+    public void addRoster(Passenger[] roster){
+        this.roster = roster;
+    }
+
+
+    public void AddCrewMembers(CrewMember[] crew) {
+        this.crew = crew;
     }
 }
