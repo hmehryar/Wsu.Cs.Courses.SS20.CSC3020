@@ -1,9 +1,12 @@
-package csc3020.lecture10.gr4381;
+package csc3020.lecture14.gr4381;
 
-public class CargoFlight extends Flight{
+import java.io.IOException;
+
+public class CargoFlight extends Flight {
     private float maxCargoSpace = 1000.0f;
     private float usedCargoSpace;
 //    public int seats = 12;
+
 
     public CargoFlight(){
 //        super();
@@ -23,6 +26,12 @@ public class CargoFlight extends Flight{
     @Override
     public int getSeats(){
         return 12;
+    }
+
+    @Override
+    public void addPassengers(String filename) throws IOException, NullPointerException {
+        super.addPassengers(filename);
+        throw new NullPointerException("It is pointing to nowhere!");
     }
 
     final public void add1Package(float height, float width, float depth){

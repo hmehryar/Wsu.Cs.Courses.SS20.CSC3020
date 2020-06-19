@@ -1,6 +1,6 @@
-package csc3020.lecture12.gr4381;
+package csc3020.lecture14.gr4381;
 
-public class CrewMember {
+public class CrewMember  extends Person{
     private FlightCrewJob job;
 
     public CrewMember(FlightCrewJob job){
@@ -17,6 +17,7 @@ public class CrewMember {
     @Override
     public String toString() {
         return "CrewMember{" +
+                "name=" + getName() +
                 "job=" + job +
                 '}';
     }

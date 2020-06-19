@@ -1,4 +1,4 @@
-package com.csc3020.lecture12.gr4381;
+package csc3020.lecture12.gr4381;
 
 import java.io.IOException;
 
