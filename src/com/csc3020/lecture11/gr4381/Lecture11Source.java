@@ -1,4 +1,4 @@
-package com.csc3020.lecture11.gr4381;
+package csc3020.lecture11.gr4381;
 // Author:  Matthew Martin
 public class Lecture11Source {
     public static void main(String[] args) {

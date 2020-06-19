@@ -1,4 +1,4 @@
-package lecture09.ev2601;
+package csc3020.lecture09.ev2601;
 
 public class CargoFlight extends Flight {
     public float maxCargoSpace=1000.0f;
