@@ -1,4 +1,4 @@
-package com.csc3020.lecture07.gr4381;
+package csc3020.lecture07.gr4381;
 
 public class Passenger {
     private int checkedBags;
