@@ -1,4 +1,4 @@
-package com.csc3020.lecture09.gr4381;
+package csc3020.lecture09.gr4381;
 
 // Lecture 05: Class//
 public class Flight {
