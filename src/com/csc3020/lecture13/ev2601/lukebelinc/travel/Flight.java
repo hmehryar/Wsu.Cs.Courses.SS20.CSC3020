@@ -1,12 +1,20 @@
 package csc3020.lecture13.ev2601.lukebelinc.travel;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+// Lecture 05: Class//
 public class Flight {
+    protected int legacyFlightNumber;
+    static final int MAX_FAA_SEATS = 550;
     public int passengers;
     public int seats;
     private boolean[] isSeatAvailable;
     private Integer flightNumber;
     private Character flightClass;
     private int maxCarryOns, totalCarryOns;
+//     = seats * 2
     private int totalCheckedBags;
     {
         seats = 150;
@@ -29,20 +37,25 @@ public class Flight {
         this.flightNumber=flightNumber;
     }
 
-    public  Flight(char flightClass){
+    public Flight(char flightClass){
         this();
         this.flightClass=flightClass;
     }
 
+
     @Override
     public String toString() {
-        // return super.toString();
-        if (flightNumber != null)
-            return "Flight #" + flightNumber;
-        else if (flightClass != null)
-            return "Flight class " + flightClass;
-        else
-            return "Flight identity not set";
+//        return "Flight{" +
+//                "flightNumber=" + flightNumber +
+//                ", flightClass=" + flightClass +
+//                '}';
+        if(flightNumber!=null){
+            return "Flight #"+flightNumber;
+        }else if (flightClass!=null){
+            return "Flight Class "+flightClass;
+        }else{
+            return "Flight identity is not set";
+        }
     }
 
     @Override
@@ -99,7 +112,7 @@ public class Flight {
             totalCheckedBags+=bags;
         }
     }
-    public void add1Passenger(Passenger p){
+    public void add1Passenger(csc3020.lecture13.ev2601.lukebelinc.travel.Passenger p){
         add1Passenger(p.getCheckedBags());
     }
     public void add1Passenger(int bags, int carryOns){
@@ -113,7 +126,21 @@ public class Flight {
     public void add1Passenger(Passenger p, int carryOns){
         add1Passenger(p.getCheckedBags(),carryOns);
     }
+    public void addPassengers(String fileName) throws IOException {
+        BufferedReader reader=null;
+        try{
+            reader =new BufferedReader(new FileReader(fileName));
+            String line=null;
+            while((line=reader.readLine())!=null){
+                String[] parts= line.split(" ");
+                passengers+=Integer.valueOf( parts[0]);
+            }
+        }finally {
 
+        if(reader!=null)
+            reader.close();
+        }
+    }
 
     private boolean hasSeating(){
         return passengers < seats;
@@ -139,6 +166,7 @@ public class Flight {
         String str="Flight[ seats= "+this.seats+",passengers= "+this.passengers+"]";
         System.out.println(str);
     }
+    private class LittleFlight{
 
-
+    }
 }
