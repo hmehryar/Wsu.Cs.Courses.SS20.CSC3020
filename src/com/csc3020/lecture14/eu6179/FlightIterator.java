@@ -1,0 +1,29 @@
+package com.csc3020.lecture14.eu6179;
+
+import java.util.Iterator;
+
+public class FlightIterator implements Iterator<Person> {
+    private Person[] crew;
+    private  Passenger[] roster;
+    private int index=0;
+
+    public FlightIterator(Person[] crew, Passenger[] roster){
+        this.crew=crew;
+        this.roster=roster;
+    }
+
+    public FlightIterator(CrewMember[] crew, Passenger[] roster) {
+    }
+
+    @Override
+    public boolean hasNext() {
+        return index<(crew.length+roster.length);
+    }
+
+    @Override
+    public Person next() {
+        Person person=(index<crew.length)?crew[index]:roster[index-crew.length];
+        index++;
+        return person;
+    }
+}
