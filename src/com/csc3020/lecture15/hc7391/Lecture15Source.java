@@ -1,7 +1,7 @@
-package com.csc3020.lecture15.hc7391;
+package csc3020.lecture15.hc7391;
 
-import static com.csc3020.lecture15.hc7391.Flight.getAllPassengers;
-import static com.csc3020.lecture15.hc7391.Flight.resetAllPassengers;
+import static csc3020.lecture15.hc7391.Flight.getAllPassengers;
+import static csc3020.lecture15.hc7391.Flight.resetAllPassengers;
 
 public class Lecture15Source {
 
