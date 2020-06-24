@@ -1,4 +1,4 @@
-package csc3020.lecture14.hm;//package com.csc3020.lecture06.hm;
+package csc3020.lecture14.gh9893;//package com.csc3020.lecture06.gh9893;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
