@@ -33,8 +33,7 @@ public class Flight implements Comparable<Flight>,Iterable<Person> {
         totalCheckedBags = 0;
     }
 
-    public Flight() {
-    }
+    public Flight() { }
 
     public Flight(int flightNumber) {
         this();
