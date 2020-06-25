@@ -1,7 +1,7 @@
 package com.csc3020.lecture15.gg8219;
 
-//import static csc3020.lecture15.hm.Flight.resetAllPassengers;
-//import static csc3020.lecture15.hm.Flight.getAllPassengers;
+import static com.csc3020.lecture15.gg8219.Flight.resetAllPassengers;
+import static com.csc3020.lecture15.gg8219.Flight.getAllPassengers;
 
 public class Lecture15Source {
     public static void main(String[] args) {
@@ -23,7 +23,7 @@ public class Lecture15Source {
         //allPassengers++;
 
         //Flight.resetAllPassengers()
-       // System.out.println(getAllPassengers());
+        System.out.println(getAllPassengers());
         //System.out.println(allPassengers);
 
 
