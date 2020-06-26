@@ -1,7 +1,7 @@
 package com.csc3020.lecture16.gi3399;
 
 import java.io.*;
-
+//Author: George Esho
 public class Lecture16Source {
     public static void main(String[] args) {
 //        //Reading One Byte at a Time
