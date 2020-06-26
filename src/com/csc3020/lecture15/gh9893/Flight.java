@@ -1,4 +1,4 @@
-package csc3020.lecture14.gh9893;//package com.csc3020.lecture06.gh9893;
+package csc3020.lecture15.gh9893;//package com.csc3020.lecture06.gh9893;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -19,6 +19,7 @@ public class Flight implements Comparable<Flight>,Iterable<Person> {
     private int flightTime;//minutes past midnight
     private CrewMember[] crew;
     private Passenger[] roster;
+
 
     {
         seats = 150;
@@ -47,9 +48,37 @@ public class Flight implements Comparable<Flight>,Iterable<Person> {
 
     @Override
     public Iterator<Person> iterator() {
-        return  new FlightIterator(crew,roster);
-    }
+        //return  new FlightIterator(crew,roster);
+        //return new FlightIterator();
+        return new Iterator<Person>() {
+            private int index=0;
+            @Override
+            public boolean hasNext() {
+                return index<(crew.length+roster.length);
+            }
 
+            @Override
+            public Person next() {
+                Person person=(index<crew.length)?crew[index]:roster[index-crew.length];
+                index++;
+                return person;
+            }
+        };
+    }
+    //    private class FlightIterator implements Iterator<Person>{
+//        private int index=0;
+//        @Override
+//        public boolean hasNext() {
+//            return index<(crew.length+roster.length);
+//        }
+//
+//        @Override
+//        public Person next() {
+//            Person person=(index<crew.length)?crew[index]:roster[index-crew.length];
+//            index++;
+//            return person;
+//        }
+//    }
     @Override
     public String toString() {
         return "Flight{" +
@@ -153,8 +182,10 @@ public class Flight implements Comparable<Flight>,Iterable<Person> {
     }
 
     public void add1Passenger() {
-        if (hasSeating())
+        if (hasSeating()) {
             passengers += 1;
+            allPassengers += 1;
+        }
         else
             handleTooMany();
     }
@@ -234,6 +265,11 @@ public class Flight implements Comparable<Flight>,Iterable<Person> {
         System.out.println(str);
     }
 
-
-
+    static int allPassengers;
+    static int getAllPassengers(){
+        return allPassengers;
+    }
+    static int resetAllPassengers(){
+        return allPassengers=0;
+    }
 }
