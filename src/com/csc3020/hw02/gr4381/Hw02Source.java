@@ -1,4 +1,4 @@
-package com.csc3020.hw02.gr4381;
+package csc3020.hw02.gr4381;
 //
 // Author: Matthew Martin
 // Date: 2020-05-28

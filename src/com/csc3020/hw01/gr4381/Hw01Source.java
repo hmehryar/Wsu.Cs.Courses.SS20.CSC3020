@@ -1,4 +1,4 @@
-package com.csc3020.hw01.gr4381;
+package csc3020.hw01.gr4381;
 
 //
 // Author: Matthew Martin
