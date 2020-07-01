@@ -1,4 +1,4 @@
-package csc3020.hw03.hm;
+package csc3020.hw04MidTermProject.hm;
 
 public class MathEquation {
     double leftValue;
@@ -9,7 +9,7 @@ public class MathEquation {
     private  MathEquation(){
     }
 
-    private MathEquation(char opCode) {
+    public MathEquation(char opCode) {
         this();
         this.opCode = opCode;
     }
@@ -23,6 +23,17 @@ public class MathEquation {
         return result;
     }
 
+    void execute(int leftValue,int rightValue){
+        this.leftValue=leftValue;
+        this.rightValue=rightValue;
+        execute();
+        result=(int)result;
+    }
+    void execute(double leftValue,double rightValue){
+        this.leftValue=leftValue;
+        this.rightValue=rightValue;
+        execute();
+    }
     void execute(){
         switch (opCode){
             case 'a':
