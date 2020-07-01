@@ -1,18 +1,15 @@
-package csc3020.hw04MidTermProject;
-
+package com.csc3020.hw04MidTermProject.go5621;
+//*
+// Author: Patricia Liu
+// Homework 4: Multiplier
+// */
 public class Multiplier extends CalculateBase{
-    double product;
-
-
     public Multiplier(double leftVal, double rightVal) {
         super(leftVal, rightVal);
     }
 
     @Override
     public void calculate() {
-        product = leftVal * rightVal;
-        System.out.print("Result= ");
-        System.out.println(product);
+        result = leftVal * rightVal;
     }
-
 }
