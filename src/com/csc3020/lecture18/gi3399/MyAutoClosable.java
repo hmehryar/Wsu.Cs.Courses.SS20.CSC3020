@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public class MyAutoClosable implements AutoCloseable {
     public void saySomething() throws IOException {
-        FileReader reader = new FileReader("filePath.txt");
+//        FileReader reader = new FileReader("filePath.txt");
         throw new IOException("Custom Exception");
 //        throw new Exception("New Exception Message");
         //        System.out.println("Something");
@@ -21,7 +21,7 @@ public class MyAutoClosable implements AutoCloseable {
     }
     @Override
     public void close() throws Exception {
-        System.out.println("Custom FileNotFoundException from close method");
+        throw new FileNotFoundException("Custom FileNotFoundException from close method");
 //        System.out.println("close");
     }
 }

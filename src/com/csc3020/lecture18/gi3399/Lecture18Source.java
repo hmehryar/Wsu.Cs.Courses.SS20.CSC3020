@@ -24,11 +24,13 @@ public class Lecture18Source {
                 "Line 5 5 5 5 5"};
         try {
             doBufferedWriting(data);
+            System.out.println("---------------------");
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
         try {
             doBufferedReadingLineByLine();
+            System.out.println("---------------------");
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
