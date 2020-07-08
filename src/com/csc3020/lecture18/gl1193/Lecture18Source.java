@@ -1,8 +1,8 @@
-package com.csc3020.lecture18.gi3399;
+package com.csc3020.lecture18.gl1193;
 
 import java.io.*;
 
-//Author: George Esho
+
 public class Lecture18Source {
     public static void main(String[] args) {
         doTryCatchFinally();

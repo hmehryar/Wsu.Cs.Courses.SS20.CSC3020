@@ -1,4 +1,4 @@
-package com.csc3020.lecture18.gi3399;
+package com.csc3020.lecture18.gl1193;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;
