@@ -7,7 +7,7 @@ class Divider extends CalculateBase {
     
     @Override
     public void calculate() {
-        if (getLeftVal() == 0) throw new ArithmeticException("Division by 0 disallowed");
+        if (getRightVal() == 0) throw new ArithmeticException("Division by 0 disallowed");
         setResult(getLeftVal() / getRightVal());
     }
 }
