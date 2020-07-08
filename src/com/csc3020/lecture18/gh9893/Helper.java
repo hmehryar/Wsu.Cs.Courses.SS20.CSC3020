@@ -1,4 +1,4 @@
-package csc3020.lecture18.hm;
+package csc3020.lecture18.gh9893;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.FileWriter;
