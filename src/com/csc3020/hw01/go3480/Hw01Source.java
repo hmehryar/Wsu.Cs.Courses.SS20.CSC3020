@@ -1,4 +1,4 @@
-package com.csc3020.hw01.go3480;
+package csc3020.hw01.go3480;
 
 public class Hw01Source {
     public static void main(String[] args) {
