@@ -1,8 +1,8 @@
 package com.csc3020.lecture06.gs9945;
 
 public class Flight {
-
     public int passengers;
+    //private int passengers;
     public int seats;
 
     public Flight() {
@@ -34,12 +34,12 @@ public class Flight {
         System.out.println("Too many!");
     }
 
-    public boolean hasRoom(com.csc3020.lecture06.hm.Flight f2) {
+    public boolean hasRoom(Flight f2) {
         int total = passengers + f2.passengers;
         return total <= seats;
     }
-    public com.csc3020.lecture06.hm.Flight createFlightWithBoth(com.csc3020.lecture06.hm.Flight flight2){
-        com.csc3020.lecture06.hm.Flight newFlight=new com.csc3020.lecture06.hm.Flight();
+    public Flight createFlightWithBoth(Flight flight2){
+        Flight newFlight=new Flight();
         newFlight.seats=seats;
         newFlight.passengers=this.passengers+flight2.passengers;
         return newFlight;
