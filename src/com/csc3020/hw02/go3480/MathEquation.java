@@ -1,4 +1,4 @@
-package com.csc3020.hw02.go3480;
+package csc3020.hw02.go3480;
 
 public class MathEquation {
     public double[] leftVals = {100.0d, 25.0d, 225.0d, 11.0d};
