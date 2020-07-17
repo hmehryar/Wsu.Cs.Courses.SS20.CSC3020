@@ -17,6 +17,7 @@ public class Lecture22Source {
             showUsage();
             return;
         }
+
         String fileName = args[0];
         if (!Files.exists(Paths.get(fileName))) {
             System.out.println("\nFile Not Found: "+fileName);
