@@ -1,4 +1,4 @@
-package com.csc3020.lecture22.av7071;
+package csc3020.lecture22.av7071;
 
 import java.io.BufferedReader;
 import java.io.IOException;
