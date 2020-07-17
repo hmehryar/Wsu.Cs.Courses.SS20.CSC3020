@@ -1,4 +1,4 @@
-package csc3020.lecture22;
+package csc3020.lecture22.go3480;
 
 import java.io.BufferedReader;
 import java.nio.file.Files;
