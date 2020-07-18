@@ -1,4 +1,4 @@
-package csc3020.hw04MidTermProject.hm;
+package csc3020.hw05.hm;
 
 public class Divider extends CalculateBase {
     public Divider() {
