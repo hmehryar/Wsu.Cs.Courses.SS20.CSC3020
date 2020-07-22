@@ -1,4 +1,4 @@
-package lecture20.gg6997;
+package csc3020.lecture20.gg6997;
 
 public class MyClass implements Comparable<MyClass>{
     private String label, value;
@@ -26,13 +26,13 @@ public class MyClass implements Comparable<MyClass>{
 
     @Override
     public boolean equals(Object o) {
-        lecture20.gg6997.MyClass myClass = (lecture20.gg6997.MyClass) o;
+        csc3020.lecture20.gg6997.MyClass myClass = (csc3020.lecture20.gg6997.MyClass) o;
 //        return value.equalsIgnoreCase(myClass.value);
         return label.equalsIgnoreCase(myClass.label);
     }
 
     @Override
-    public int compareTo(lecture20.gg6997.MyClass o) {
+    public int compareTo(csc3020.lecture20.gg6997.MyClass o) {
         return value.compareToIgnoreCase(o.value);
     }
 }
