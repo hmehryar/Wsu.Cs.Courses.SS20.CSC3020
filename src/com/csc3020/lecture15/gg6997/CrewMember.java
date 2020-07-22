@@ -1,17 +1,17 @@
-package lecture15.gg6997;
+package csc3020.lecture15.gg6997;
 
-public class CrewMember extends Person {
-    private FlightCrewJob job;
+public class CrewMember extends csc3020.lecture15.gg6997.Person {
+    private csc3020.lecture15.gg6997.FlightCrewJob job;
 
-    public CrewMember(FlightCrewJob job) {
+    public CrewMember(csc3020.lecture15.gg6997.FlightCrewJob job) {
         this.job = job;
     }
 
-    public void setJob(FlightCrewJob job) {
+    public void setJob(csc3020.lecture15.gg6997.FlightCrewJob job) {
         this.job = job;
     }
 
-    public FlightCrewJob getJob() {
+    public csc3020.lecture15.gg6997.FlightCrewJob getJob() {
         return job;
     }
 
