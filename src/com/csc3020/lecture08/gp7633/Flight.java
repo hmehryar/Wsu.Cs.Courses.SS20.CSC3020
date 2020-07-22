@@ -1,4 +1,4 @@
-package com.csc3020.lecture08.gp7633;
+package csc3020.lecture08.gp7633;
 // Lecture 05: Class//
 public class Flight {
     public int passengers;

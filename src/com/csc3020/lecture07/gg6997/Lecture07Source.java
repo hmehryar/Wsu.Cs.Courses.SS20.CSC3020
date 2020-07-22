@@ -1,4 +1,8 @@
-package com.csc3020.lecture07.gg6997;
+package csc3020.lecture07.gg6997;
+
+import csc3020.lecture07.gg6997.Flight;
+import csc3020.lecture07.gg6997.Earth;
+import csc3020.lecture07.gg6997.Passenger;
 
 public class Lecture07Source {
     public static void main(String[] args) {

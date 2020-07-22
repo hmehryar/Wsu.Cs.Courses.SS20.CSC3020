@@ -1,4 +1,4 @@
-package hw01.gn2289;
+package csc3020.hw01.gn2289;
 
 public class Hw1Source {
 

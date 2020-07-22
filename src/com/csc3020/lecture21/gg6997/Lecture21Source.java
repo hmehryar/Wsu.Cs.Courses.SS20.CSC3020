@@ -1,4 +1,4 @@
-package lecture21.gg6997;
+package csc3020.lecture21.gg6997;
 
 import java.util.*;
 
@@ -10,17 +10,17 @@ public class Lecture21Source {
         //oStringLinkedList.get(0);
         //Implementing Comparable
         System.out.println("Comparable");
-        TreeSet<lecture21.gg6997.MyClass> oMyClassTree=new TreeSet<>();
-        oMyClassTree.add(new lecture21.gg6997.MyClass("2222","ghi"));
-        oMyClassTree.add(new lecture21.gg6997.MyClass("1111","abc"));
-        oMyClassTree.add(new lecture21.gg6997.MyClass("3333","def"));
+        TreeSet<csc3020.lecture21.gg6997.MyClass> oMyClassTree=new TreeSet<>();
+        oMyClassTree.add(new csc3020.lecture21.gg6997.MyClass("2222","ghi"));
+        oMyClassTree.add(new csc3020.lecture21.gg6997.MyClass("1111","abc"));
+        oMyClassTree.add(new csc3020.lecture21.gg6997.MyClass("3333","def"));
         oMyClassTree.forEach(current-> System.out.println(current.getValue()));
 
         System.out.println("Comparator");
-        TreeSet<lecture21.gg6997.MyClass> oMyClassTreeWithComparator=new TreeSet<>(new lecture21.gg6997.MyComparator());
-        oMyClassTreeWithComparator.add(new lecture21.gg6997.MyClass("2222","ghi"));
-        oMyClassTreeWithComparator.add(new lecture21.gg6997.MyClass("3333","abc"));
-        oMyClassTreeWithComparator.add(new lecture21.gg6997.MyClass("1111","def"));
+        TreeSet<csc3020.lecture21.gg6997.MyClass> oMyClassTreeWithComparator=new TreeSet<>(new csc3020.lecture21.gg6997.MyComparator());
+        oMyClassTreeWithComparator.add(new csc3020.lecture21.gg6997.MyClass("2222","ghi"));
+        oMyClassTreeWithComparator.add(new csc3020.lecture21.gg6997.MyClass("3333","abc"));
+        oMyClassTreeWithComparator.add(new csc3020.lecture21.gg6997.MyClass("1111","def"));
         oMyClassTreeWithComparator.forEach(current->System.out.println(current.toString()));
 
         //Map Collection
