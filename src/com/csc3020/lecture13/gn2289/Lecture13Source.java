@@ -1,18 +1,18 @@
-package com.csc3020.lecture13.gn2289;
+package csc3020.lecture13.gn2289;
 
 //import com.csc3020.lecture10.gn2289.CargoFlight;
 //import com.csc3020.lecture13.gn2289.travel.Flight;
 //import com.csc3020.lecture13.gn2289.travel.Passenger;
-import com.csc3020.lecture13.gn2289.travel.*;
+import csc3020.lecture13.gn2289.travel.*;
 //import com.csc3020.lecture13.gn2289.xyzcompany.bar.Beer;
 //import com.csc3020.lecture13.gn2289.xyzcompany.bar.Wine;
-import com.csc3020.lecture13.gn2289.xyzcompany.bar.*;
+import csc3020.lecture13.gn2289.xyzcompany.bar.*;
 
 public class Lecture13Source {
     public static void main(String[] args) {
         //new Lecture13Source();
         Flight oFlight = new Flight();
-        com.csc3020.lecture10.gn2289.Flight oLecture10Flight = new com.csc3020.lecture10.gn2289.Flight();
+        Flight oLecture10Flight = new Flight();
         //CargoFlight oCargoFlight = new CargoFlight();
 
         Flight dtw175 = new Flight(175);
