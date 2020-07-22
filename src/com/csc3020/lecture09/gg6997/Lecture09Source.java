@@ -1,4 +1,8 @@
-package com.csc3020.lecture09.gg6997;
+package csc3020.lecture09.gg6997;
+
+import csc3020.lecture09.gg6997.Flight;
+import csc3020.lecture09.gg6997.CargoFlight;
+import csc3020.lecture09.gg6997.Passenger;
 
 //Manraj Singh
 public class Lecture09Source {
