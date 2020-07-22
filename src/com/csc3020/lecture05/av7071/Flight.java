@@ -1,4 +1,5 @@
-package com.cs3020.lecture05.av7071;
+package cs3020.lecture05.av7071;
+
 /**Lecture 05: Class**/
 public class Flight {
     public int passengers;
