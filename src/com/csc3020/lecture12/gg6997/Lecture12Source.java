@@ -1,4 +1,4 @@
-package lecture12.gg6997;
+package csc3020.lecture12.gg6997;
 
 // Manraj Singh
 // 06/11/2020
@@ -6,6 +6,12 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+
+import csc3020.lecture12.gg6997.Flight;
+import csc3020.lecture12.gg6997.CrewMember;
+import csc3020.lecture12.gg6997.Passenger;
+import csc3020.lecture12.gg6997.FlightCrewJob;;
+
 
 public class Lecture12Source {
     public static void main(String[] args) {

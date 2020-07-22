@@ -1,4 +1,4 @@
-package com.csc3020.lecture14.fy2906;
+package csc3020.lecture14.fy2906;
 
 import java.util.Arrays;
 

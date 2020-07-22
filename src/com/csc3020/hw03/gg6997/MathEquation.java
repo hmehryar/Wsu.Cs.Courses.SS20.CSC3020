@@ -1,4 +1,4 @@
-package hw03.gg6997;
+package csc3020.hw03.gg6997;
 
 public class MathEquation {
     private double left;

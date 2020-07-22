@@ -1,4 +1,4 @@
-package lecture13.av7071;
+package csc3020.lecture13.av7071;
 
 import lecture12.av7071.CargoFlight;
 import lecture13.av7071.travel.Flight;

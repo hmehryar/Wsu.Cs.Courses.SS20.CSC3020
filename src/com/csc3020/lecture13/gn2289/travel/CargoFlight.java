@@ -1,6 +1,5 @@
-package com.csc3020.lecture13.gn2289.travel;
+package csc3020.lecture13.gn2289.travel;
 
-import com.csc3020.lecture10.gn2289.Flight;
 
 public class CargoFlight extends Flight {
     public float usedCargoSpace;
