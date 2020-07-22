@@ -1,4 +1,4 @@
-package com.csc3020.hw02.gp7633;
+package csc3020.hw02.gp7633;
 
 public class hw02Source {
     public static void main(String[] args) {
