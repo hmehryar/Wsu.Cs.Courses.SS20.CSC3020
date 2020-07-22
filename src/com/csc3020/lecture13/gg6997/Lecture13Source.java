@@ -21,7 +21,7 @@ public class Lecture13Source {
     public static void main(String[] args) {
         new Lecture13Source();
         csc3020.lecture13.gg6997.msingh.travel.Flight oFlight = new csc3020.lecture13.gg6997.msingh.travel.Flight();
-        com.csc3020.lecture11.gg6997.Flight oLecture11Flight = new com.csc3020.lecture11.gg6997.Flight();
+        csc3020.lecture11.gg6997.Flight oLecture11Flight = new csc3020.lecture11.gg6997.Flight();
         csc3020.lecture13.gg6997.msingh.travel.CargoFlight oCargoFlight = new csc3020.lecture13.gg6997.msingh.travel.CargoFlight();
 
         csc3020.lecture13.gg6997.msingh.travel.Flight lax175 = new csc3020.lecture13.gg6997.msingh.travel.Flight(175);
