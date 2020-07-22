@@ -1,4 +1,4 @@
-package com.csc3020.lecture07.gp7633;
+package csc3020.lecture07.gp7633;
 
 public class Earth {
     long circumferenceInMiles = 24901;

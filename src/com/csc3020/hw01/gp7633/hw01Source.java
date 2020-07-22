@@ -1,4 +1,4 @@
-package com.csc3020.hw01.gp7633;
+package csc3020.hw01.gp7633;
 
 public class hw01Source {
     public static void main(String[] args) {
