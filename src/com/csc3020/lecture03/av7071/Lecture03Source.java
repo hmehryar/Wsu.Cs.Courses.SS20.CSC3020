@@ -1,6 +1,6 @@
-package com.csc3020.lecture03.av7071;
+package csc3020.lecture03.av7071;
 
-public class Lecture03Source01 {
+public class Lecture03Source {
     public static void main(String[] args) {
         //Conditional Statement
         int v1 = 7;
