@@ -1,6 +1,6 @@
 package csc3020.hw05.gp7633;
 
-import static com.csc3020.hw05.gp7633.MathCommand.*;
+import static csc3020.hw05.gp7633.MathCommand.*;
 
 public class CalculateHelper extends CalculateBase {
     double leftVal;
