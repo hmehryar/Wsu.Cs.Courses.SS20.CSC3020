@@ -1,4 +1,4 @@
-package com.csc3020.lecture10.gn2289;
+package csc3020.lecture10.gn2289;
 
 public class CargoFlight extends Flight {
     public float usedCargoSpace;
