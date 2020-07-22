@@ -1,33 +1,33 @@
-package lecture13.gg6997;
+package csc3020.lecture13.gg6997;
 
 //package com.msingh.travel;
 
-import lecture12.gg6997.CargoFlight;
+import csc3020.lecture13.gg6997.msingh.travel.CargoFlight;
 
-import lecture13.gg6997.msingh.travel.*;
+//import csc3020.lecture13.gg6997.msingh.travel.*;
 //import lecture13.gg6997.msingh.travel.Flight;
 //import lecture13.gg6997.msingh.travel.Passenger;
 
 //import lecture13.gg6997.xyzcompany.*;
-import lecture13.gg6997.xyzcompany.bar.Beer;
-import lecture13.gg6997.xyzcompany.bar.Wine;
+//import csc3020.lecture13.gg6997.xyzcompany.Beer;
+//import csc3020.lecture13.gg6997.xyzcompany.Wine;
 
-//import lecture13.gg6997.msingh.travel.Flight;
-//import lecture13.gg6997.msingh.travel.Passenger;
-//import lecture13.gg6997.xyzcompany.bar.Beer;
-//import lecture13.gg6997.xyzcompany.bar.Wine;
+import csc3020.lecture13.gg6997.msingh.travel.Flight;
+import csc3020.lecture13.gg6997.msingh.travel.Passenger;
+import csc3020.lecture13.gg6997.xyzcompany.bar.Beer;
+import csc3020.lecture13.gg6997.xyzcompany.bar.Wine;
 
 public class Lecture13Source {
     public static void main(String[] args) {
         new Lecture13Source();
-        Flight oFlight = new Flight();
-        com.csc3020.lecture11.gg6997.Flight oLecture11Flight = new com.csc3020.lecture11.gg6997.Flight();
-        CargoFlight oCargoFlight = new CargoFlight();
+        csc3020.lecture13.gg6997.msingh.travel.Flight oFlight = new csc3020.lecture13.gg6997.msingh.travel.Flight();
+        csc3020.lecture11.gg6997.Flight oLecture11Flight = new csc3020.lecture11.gg6997.Flight();
+        csc3020.lecture13.gg6997.msingh.travel.CargoFlight oCargoFlight = new csc3020.lecture13.gg6997.msingh.travel.CargoFlight();
 
-        Flight lax175 = new Flight(175);
-        Beer liteBeer = new Beer();
-        Passenger jane = new Passenger();
-        Wine merlot = new Wine();
+        csc3020.lecture13.gg6997.msingh.travel.Flight lax175 = new csc3020.lecture13.gg6997.msingh.travel.Flight(175);
+        csc3020.lecture13.gg6997.xyzcompany.bar.Beer liteBeer = new csc3020.lecture13.gg6997.xyzcompany.bar.Beer();
+        csc3020.lecture13.gg6997.msingh.travel.Passenger jane = new csc3020.lecture13.gg6997.msingh.travel.Passenger();
+        csc3020.lecture13.gg6997.xyzcompany.bar.Wine merlot = new csc3020.lecture13.gg6997.xyzcompany.bar.Wine();
         lax175.getFlightNumber();
     }
 }

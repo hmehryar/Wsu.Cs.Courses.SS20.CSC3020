@@ -1,4 +1,12 @@
-package com.csc3020.lecture10.gg6997;
+package csc3020.lecture10.gg6997;
+
+import csc3020.lecture10.gg6997.Flight;
+import csc3020.lecture10.gg6997.Pilot;
+import csc3020.lecture10.gg6997.CargoFlight;
+import csc3020.lecture10.gg6997.Passenger;
+import csc3020.lecture10.gg6997.CargoOnlyPilot;
+import csc3020.lecture10.gg6997.Student;
+import csc3020.lecture10.gg6997.FullLicensePilot;
 
 public class Lecture10Source {
     public static void main(String[] args) {

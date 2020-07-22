@@ -1,4 +1,8 @@
-package lecture12.gg6997;
+package csc3020.lecture12.gg6997;
+
+import csc3020.lecture12.gg6997.Flight;
+import csc3020.lecture12.gg6997.Passenger;
+import csc3020.lecture12.gg6997.FlightCrewJob;;
 
 public class CrewMember {
     private FlightCrewJob job;

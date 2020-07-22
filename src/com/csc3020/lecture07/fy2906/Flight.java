@@ -1,4 +1,4 @@
-package com.csc3020.lecture07.fy2906;
+package csc3020.lecture07.fy2906;
 
 public class Flight {
     private int passengers;

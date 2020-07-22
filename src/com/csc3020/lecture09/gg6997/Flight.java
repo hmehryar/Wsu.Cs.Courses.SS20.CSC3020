@@ -1,4 +1,7 @@
-package com.csc3020.lecture09.gg6997;
+package csc3020.lecture09.gg6997;
+
+import csc3020.lecture09.gg6997.Passenger;
+import csc3020.lecture09.gg6997.CargoFlight;
 
 public class Flight {
     private int flightNumber;

@@ -1,6 +1,6 @@
-package lecture14.gg6997;
+package csc3020.lecture14.gg6997;
 
-public class Passenger extends Person implements Comparable<Passenger>{
+public class Passenger extends csc3020.lecture14.gg6997.Person implements Comparable<Passenger>{
     private int checkedBags;
     private final int freeBags;
     private double perBagFee;

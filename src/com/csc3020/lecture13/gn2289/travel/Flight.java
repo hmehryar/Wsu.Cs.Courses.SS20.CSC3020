@@ -1,4 +1,4 @@
-package com.csc3020.lecture13.gn2289.travel;
+package csc3020.lecture13.gn2289.travel;
 
 //package com.gn2289.travel;
 

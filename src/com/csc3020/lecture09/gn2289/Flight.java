@@ -1,6 +1,5 @@
-package com.csc3020.lecture09.gn2289;
+package csc3020.lecture09.gn2289;
 
-import com.csc3020.lecture08.gn2289.Passenger;
 
 public class Flight extends Object{
     private int passengers;

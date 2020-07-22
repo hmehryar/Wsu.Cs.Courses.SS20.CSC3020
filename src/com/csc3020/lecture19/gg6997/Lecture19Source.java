@@ -1,4 +1,4 @@
-package lecture19.gg6997;
+package csc3020.lecture19.gg6997;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

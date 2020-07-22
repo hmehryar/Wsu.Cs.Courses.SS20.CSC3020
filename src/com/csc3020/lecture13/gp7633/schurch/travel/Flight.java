@@ -1,4 +1,4 @@
-package com.csc3020.lecture13.gp7633.schurch.travel;//package com.csc3020.lecture06.hm;
+package csc3020.lecture13.gp7633.schurch.travel;//package com.csc3020.lecture06.hm;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

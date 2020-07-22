@@ -1,4 +1,4 @@
-package com.csc3020.lecture12.fy2906;
+package csc3020.lecture12.fy2906;
 
 public class CrewMember {
     private FlightCrewJob job;
