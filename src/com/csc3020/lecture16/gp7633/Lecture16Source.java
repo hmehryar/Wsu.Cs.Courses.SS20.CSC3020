@@ -1,5 +1,7 @@
 package csc3020.lecture16.gp7633;
 
+import csc3020.lecture16.hm.Helper;
+
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.Reader;
@@ -102,12 +104,12 @@ public class Lecture16Source {
 //        }
         doTryCatchFinally();
        }
-    public static void doTryCatchFinally() throws FileNotFoundException {
-        char[] buff = new char[10];
+    public static void doTryCatchFinally() {
+        char[] buff = new char[8];
         int length;
-        Reader reader = Helper.openReader("file1.txt");
+        Reader reader = null;
         try {
-            reader = null;
+            reader = Helper.openReader("file1.txt");
             while ((length = reader.read(buff)) >= 0) {
                 System.out.println("\nLength: " + length);
                 for (int i = 0; i < length; i++) {
