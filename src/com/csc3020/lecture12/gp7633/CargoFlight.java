@@ -1,4 +1,4 @@
-package com.csc3020.lecture12.gp7633;
+package csc3020.lecture12.gp7633;
 
 import java.io.IOException;
 

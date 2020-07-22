@@ -1,4 +1,4 @@
-package com.csc3020.lecture05.gp7633;
+package csc3020.lecture05.gp7633;
 
 public class Flight {
     int passengers;
