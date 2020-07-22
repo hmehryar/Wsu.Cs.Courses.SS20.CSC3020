@@ -1,9 +1,9 @@
-package com.csc3020.lecture13.fy2906;
+package csc3020.lecture13.fy2906;
 
-import com.csc3020.lecture12.fy2906.CargoFlight;
-import com.csc3020.lecture13.fy2906.travel.Flight;
-import com.csc3020.lecture13.fy2906.travel.Passenger;
-import com.csc3020.lecture13.fy2906.xyzcompany.bar.*;
+import csc3020.lecture12.fy2906.CargoFlight;
+import csc3020.lecture13.fy2906.travel.Flight;
+import csc3020.lecture13.fy2906.travel.Passenger;
+import csc3020.lecture13.fy2906.xyzcompany.bar.*;
 
 public class Lecture13Source {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.csc3020.hw02.gp7633;
+package csc3020.hw02.gp7633;
 
 public class MathEquation {
     private char character;
