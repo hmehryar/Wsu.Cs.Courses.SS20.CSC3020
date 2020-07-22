@@ -1,8 +1,8 @@
-package lecture14.gg6997;
+package csc3020.lecture14.gg6997;
 
 import lecture12.gg6997.FlightCrewJob;
 
-public class CrewMember extends Person{
+public class CrewMember extends csc3020.lecture14.gg6997.Person{
     private FlightCrewJob job;
 
     public CrewMember(FlightCrewJob job) {
