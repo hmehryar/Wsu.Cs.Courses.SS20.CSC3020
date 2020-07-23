@@ -1,7 +1,12 @@
-package lecture12.gg6997;
+package csc3020.lecture12.gg6997;
 
 import java.io.File;
 import java.io.IOException;
+
+import csc3020.lecture12.gg6997.Flight;
+import csc3020.lecture12.gg6997.CrewMember;
+import csc3020.lecture12.gg6997.Passenger;
+import csc3020.lecture12.gg6997.FlightCrewJob;;
 
 public class CargoFlight extends Flight {
     public float maxCargoSpace = 1000.0f;

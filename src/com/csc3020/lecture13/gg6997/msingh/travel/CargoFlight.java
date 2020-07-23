@@ -1,10 +1,10 @@
-package lecture13.gg6997.msingh.travel;
+package csc3020.lecture13.gg6997.msingh.travel;
 
-import lecture12.gg6997.Flight;
+//import csc3020.lecture13.gg6997.msingh.travel.Flight;
 
 import java.io.IOException;
 
-public class CargoFlight extends Flight {
+public class CargoFlight extends csc3020.lecture13.gg6997.msingh.travel.Flight {
     float maxCargoSpace = 1000.0f;
     float usedCargoSpace;
     protected int legacyFlightNumber;

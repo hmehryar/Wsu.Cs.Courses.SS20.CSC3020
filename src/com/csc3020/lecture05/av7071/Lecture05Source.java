@@ -1,4 +1,4 @@
-package com.csc3020.lecture05.av7071;
+package csc3020.lecture05.av7071;
 
 /**
  * Author: Kevin Kluka

@@ -1,7 +1,7 @@
-package hw04MidTermProject.gg6997;
+package csc3020.hw04MidTermProject.gg6997;
 
 //Class extends to take values given and calculate needed operation
-class Subtractor extends hw04MidTermProject.gg6997.CalculateBase {
+class Subtractor extends csc3020.hw04MidTermProject.gg6997.CalculateBase {
 
     //constructor uses super to refer to parent object CalculateBase's values
     public Subtractor(double leftVal, double rightVal){

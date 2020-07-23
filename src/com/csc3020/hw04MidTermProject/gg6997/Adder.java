@@ -1,7 +1,7 @@
-package hw04MidTermProject.gg6997;
+package csc3020.hw04MidTermProject.gg6997;
 
 //Class extends to take values given and calculate needed operation
-class Adder extends hw04MidTermProject.gg6997.CalculateBase {
+class Adder extends csc3020.hw04MidTermProject.gg6997.CalculateBase {
 
     //constructor uses super to refer to parent object CalculateBase's values
     public Adder(double leftVal, double rightVal) {

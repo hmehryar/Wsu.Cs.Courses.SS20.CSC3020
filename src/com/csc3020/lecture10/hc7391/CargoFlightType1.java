@@ -1,4 +1,4 @@
-package com.csc3020.lecture10.hc7391;
+package csc3020.lecture10.hc7391;
 
 public class CargoFlightType1 extends CargoFlight{
 //@Override

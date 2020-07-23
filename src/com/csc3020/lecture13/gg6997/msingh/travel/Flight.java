@@ -1,4 +1,4 @@
-package lecture13.gg6997.msingh.travel;
+package csc3020.lecture13.gg6997.msingh.travel;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

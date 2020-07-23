@@ -1,4 +1,5 @@
-package lecture16.gg6997;
+package csc3020.lecture16.gg6997;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 

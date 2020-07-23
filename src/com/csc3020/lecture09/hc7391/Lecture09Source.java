@@ -1,4 +1,4 @@
-package com.csc3020.lecture09.hc7391;
+package csc3020.lecture09.hc7391;
 //CSC 3020
 //Author Bryan Vinson
 public class Lecture09Source {

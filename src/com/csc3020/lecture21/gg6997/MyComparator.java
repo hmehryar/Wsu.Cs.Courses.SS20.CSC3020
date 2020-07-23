@@ -1,4 +1,4 @@
-package lecture21.gg6997;
+package csc3020.lecture21.gg6997;
 
 import java.util.Comparator;
 

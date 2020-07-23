@@ -1,4 +1,4 @@
-package com.csc3020.lecture06.gg6997;
+package csc3020.lecture06.gg6997;
 
 //Author: Manraj Singh
 //Lecture 06: Flight Class
