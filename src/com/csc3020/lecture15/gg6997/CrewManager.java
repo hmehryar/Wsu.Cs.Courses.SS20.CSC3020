@@ -1,4 +1,4 @@
-package lecture15.gg6997;
+package csc3020.lecture15.gg6997;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -8,7 +8,7 @@ import java.io.IOException;
 public class CrewManager {
 
     private final static String FILENAME="D:\\CrewMemberPool.txt";
-    private static  CrewMember[] pool;
+    private static  csc3020.lecture15.gg6997.CrewMember[] pool;
     static {
         BufferedReader oBufferedReader=null;
         try{
@@ -16,11 +16,11 @@ public class CrewManager {
             oBufferedReader=new BufferedReader(oFileReader);
             String line=null;
             int index=0;
-            pool=new CrewMember[10];
+            pool=new csc3020.lecture15.gg6997.CrewMember[10];
             while ((line=oBufferedReader.readLine())!=null){
                 String[] parts=line.split(",");
-                FlightCrewJob job=FlightCrewJob.valueOf(parts[0]);
-                pool[index]=new CrewMember(job);
+                csc3020.lecture15.gg6997.FlightCrewJob job= csc3020.lecture15.gg6997.FlightCrewJob.valueOf(parts[0]);
+                pool[index]=new csc3020.lecture15.gg6997.CrewMember(job);
                 pool[index].setName(parts[1]);
                 index++;
             }
@@ -38,8 +38,8 @@ public class CrewManager {
         }
 
     }
-    public  static CrewMember FindAvailable(FlightCrewJob job){
-        CrewMember oCrewMember=null;
+    public  static csc3020.lecture15.gg6997.CrewMember FindAvailable(csc3020.lecture15.gg6997.FlightCrewJob job){
+        csc3020.lecture15.gg6997.CrewMember oCrewMember=null;
         for (int index = 0; index < pool.length; index++) {
             if (pool[index]!=null && pool[index].getJob()==job){
                 oCrewMember=pool[index];
@@ -50,7 +50,7 @@ public class CrewManager {
         return  oCrewMember;
     }
 
-    public static CrewMember[] List(){
+    public static csc3020.lecture15.gg6997.CrewMember[] List(){
         return  pool;
     }
 }

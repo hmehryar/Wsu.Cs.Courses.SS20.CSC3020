@@ -1,4 +1,6 @@
-package com.csc3020.lecture08.gg6997;
+package csc3020.lecture08.gg6997;
+
+import csc3020.lecture08.gg6997.Passenger;
 
 public class Flight {
     public int passengers;

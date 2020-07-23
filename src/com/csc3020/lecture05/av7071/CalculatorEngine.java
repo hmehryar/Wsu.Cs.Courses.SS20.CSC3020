@@ -1,4 +1,4 @@
-package com.cs3020.lecture05.av7071;
+package cs3020.lecture05.av7071;
 
 import java.awt.*;
 

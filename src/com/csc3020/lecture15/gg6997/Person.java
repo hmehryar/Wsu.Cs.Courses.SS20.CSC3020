@@ -1,4 +1,4 @@
-package lecture15.gg6997;
+package csc3020.lecture15.gg6997;
 
 public class Person {
     private String name;

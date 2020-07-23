@@ -1,4 +1,4 @@
-package lecture13.av7071.travel;
+package csc3020.lecture13.av7071.travel;
 
  public class Passenger {
     private int checkedBags;
