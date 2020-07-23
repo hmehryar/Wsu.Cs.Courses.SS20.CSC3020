@@ -1,4 +1,4 @@
-package com.csc3020.lecture03.em0608;
+package csc3020.lecture03.em0608;
 
 import java.util.Scanner;
 import javax.swing.JOptionPane;
