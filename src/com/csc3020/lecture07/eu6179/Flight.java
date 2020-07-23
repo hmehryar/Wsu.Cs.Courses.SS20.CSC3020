@@ -1,4 +1,4 @@
-package com.csc3020.lecture08.eu6179;
+package com.csc3020.lecture07.eu6179;
 
 public class Flight {
     public int passengers;
@@ -6,9 +6,7 @@ public class Flight {
     private boolean[] isSeatAvailable;
     private int flightNumber;
     private char flightClass;
-    private int maxCarryOns, totalCarryOns;
-    //     = seats * 2
-    private int totalCheckedBags;
+
     {
         seats = 150;
         passengers = 0;
@@ -16,10 +14,9 @@ public class Flight {
         for (int index = 0; index <seats ; index++) {
             isSeatAvailable[index]=true;
         }
-        maxCarryOns = seats * 2;
-        totalCarryOns=0;
-        totalCheckedBags=0;
     }
+
+
     public Flight() {
     }
 
@@ -32,7 +29,6 @@ public class Flight {
         this();
         this.flightClass=flightClass;
     }
-
     public int getSeat(){
         return  seats;
     }
@@ -43,6 +39,7 @@ public class Flight {
     public int getFlightNumber() {
         return flightNumber;
     }
+
     public void setFlightNumber(int flightNumber) {
         this.flightNumber = flightNumber;
     }
@@ -50,6 +47,7 @@ public class Flight {
     public char getFlightClass() {
         return flightClass;
     }
+
     public void setFlightClass(char flightClass) {
         this.flightClass = flightClass;
     }
@@ -57,45 +55,17 @@ public class Flight {
     public int getPassengers() {
         return passengers;
     }
-
     public void setPassengers(int passengers) {
         this.passengers = passengers;
     }
 
-    public void add1Passenger() {
-        if (hasSeating())
+    public void add1Pass() {
+        if (passengers < seats)
             passengers += 1;
         else
             handleTooMany();
     }
-    public void add1Passenger(int bags){
-        if(hasSeating()){
-            add1Passenger();
-            totalCheckedBags+=bags;
-        }
-    }
-    public void add1Passenger(Passenger p){
-        add1Passenger(p.getCheckedBags());
-    }
-    public void add1Passenger(int bags, int carryOns){
-        //System.out.println("Inside the method");
-        if (hasSeating()&& hasCarryOnSpace(carryOns)){
-            //System.out.println("Inside the condition");
-            add1Passenger(bags);
-            totalCarryOns+=carryOns;
-        }
-    }
-    public void add1Passenger(Passenger p, int carryOns){
-        add1Passenger(p.getCheckedBags(),carryOns);
-    }
 
-
-    private boolean hasSeating(){
-        return passengers < seats;
-    }
-    private boolean hasCarryOnSpace(int carryOns){
-        return totalCarryOns+carryOns<=maxCarryOns;
-    }
     private void handleTooMany() {
         System.out.println("Too many!");
     }
@@ -104,7 +74,7 @@ public class Flight {
         int total = passengers + f2.passengers;
         return total <= seats;
     }
-    public  Flight createFlightWithBoth(Flight flight2){
+    public Flight createFlightWithBoth(Flight flight2){
         Flight newFlight=new Flight();
         newFlight.seats=seats;
         newFlight.passengers=this.passengers+flight2.passengers;
@@ -114,5 +84,4 @@ public class Flight {
         String str="Flight[ seats= "+this.seats+",passengers= "+this.passengers+"]";
         System.out.println(str);
     }
-
 }
