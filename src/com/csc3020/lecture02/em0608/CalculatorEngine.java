@@ -1,4 +1,4 @@
-package com.csc3020.session02;
+package com.csc3020.lecture02.em0608;
 
 public class CalculatorEngine {
     public static void main(String[] args){

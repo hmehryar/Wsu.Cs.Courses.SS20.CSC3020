@@ -1,4 +1,4 @@
-package com.csc3020.session02;
+package com.csc3020.lecture02.em0608;
 
 public class lecture02source {
     public static void main(String[] args){
