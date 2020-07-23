@@ -34,8 +34,8 @@ A collaborative space for CSC 3020: Java Programming!
 
 ### CLI
 
-[Getting Started - The Command Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
-[My First GitHub Contribution](http://www.iankwiotek.com/my-first-git-commit/)
+* [Getting Started - The Command Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+* [My First GitHub Contribution](http://www.iankwiotek.com/my-first-git-commit/)
 
 ### IntelliJ IDEA
 
