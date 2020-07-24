@@ -1,4 +1,4 @@
-package hw02.gn8271;
+package csc3020.hw02.gn8271;
 
 public class MathEquation {
     // The constructor for MathEquation class

@@ -1,4 +1,4 @@
-package hw02.gn8271;
+package csc3020.hw02.gn8271;
 
 public class Hw02Source {
     public static void main(String[] args) {
