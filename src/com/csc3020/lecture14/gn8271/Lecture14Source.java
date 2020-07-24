@@ -1,6 +1,9 @@
-package lecture14.gn8271;
-
-import java.lang.reflect.Array;
+package csc3020.lecture14.gn8271;
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture14
+// *
 import java.util.Arrays;
 
 public class Lecture14Source {

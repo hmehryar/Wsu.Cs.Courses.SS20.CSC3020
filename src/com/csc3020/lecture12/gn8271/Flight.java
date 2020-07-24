@@ -1,12 +1,9 @@
-package lecture12.gn8271;
-//Lecture 12
-// Author: Raisa Zaman
+package csc3020.lecture12.gn8271;
+
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 
-// Lecture 05: Class//
 public class Flight {
     static final int MAX_FAA_SEATS = 550;
     public int passengers;
@@ -15,7 +12,7 @@ public class Flight {
     private Integer flightNumber;
     private Character flightClass;
     private int maxCarryOns, totalCarryOns;
-    //     = seats * 2
+//     = seats * 2
     private int totalCheckedBags;
     {
         seats = 150;
@@ -70,7 +67,7 @@ public class Flight {
         Flight other=(Flight)o;
         return
                 flightClass==other.flightClass &&
-                        flightNumber==other.flightNumber;
+                flightNumber==other.flightNumber;
     }
     public int getSeat(){
         return  150;
@@ -138,8 +135,8 @@ public class Flight {
             }
         }finally {
 
-            if(reader!=null)
-                reader.close();
+        if(reader!=null)
+            reader.close();
         }
     }
 
@@ -168,5 +165,3 @@ public class Flight {
         System.out.println(str);
     }
 }
-
-

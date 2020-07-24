@@ -1,5 +1,9 @@
-package lecture14.gn8271;
-
+package csc3020.lecture14.gn8271;
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture14
+// *
 public class Passenger extends Person implements Comparable<Passenger>
 {
     private int checkedBags;
@@ -110,4 +114,3 @@ public class Passenger extends Person implements Comparable<Passenger>
                 '}';
     }
 }
-
