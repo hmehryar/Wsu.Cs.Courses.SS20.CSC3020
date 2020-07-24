@@ -1,1 +1,1 @@
-package com.csc3020.lecture12.hc7391;
+package csc3020.lecture12.hc7391;

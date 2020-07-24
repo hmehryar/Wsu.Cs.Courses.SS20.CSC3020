@@ -1,4 +1,4 @@
-package lecture12.gg6997;
+package csc3020.lecture12.gg6997;
 
 public final class Passenger {
     private int checkedBags;

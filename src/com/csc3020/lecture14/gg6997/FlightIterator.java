@@ -1,13 +1,13 @@
-package lecture14.gg6997;
+package csc3020.lecture14.gg6997;
 
 import java.util.Iterator;
 
-public class FlightIterator implements Iterator<Person> {
-    private CrewMember[] crew;
-    private Passenger[] roster;
+public class FlightIterator implements Iterator<csc3020.lecture14.gg6997.Person> {
+    private csc3020.lecture14.gg6997.CrewMember[] crew;
+    private csc3020.lecture14.gg6997.Passenger[] roster;
     private int index;
 
-    public FlightIterator(CrewMember[] crew, Passenger[] roster) {
+    public FlightIterator(csc3020.lecture14.gg6997.CrewMember[] crew, csc3020.lecture14.gg6997.Passenger[] roster) {
         this.crew = crew;
         this.roster = roster;
     }
@@ -18,8 +18,8 @@ public class FlightIterator implements Iterator<Person> {
     }
 
     @Override
-    public Person next() {
-        Person person = (index >= crew.length) ? roster[index - crew.length] : crew[index];
+    public csc3020.lecture14.gg6997.Person next() {
+        csc3020.lecture14.gg6997.Person person = (index >= crew.length) ? roster[index - crew.length] : crew[index];
         index++;
         return person;
     }
