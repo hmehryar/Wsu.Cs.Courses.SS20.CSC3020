@@ -1,8 +1,11 @@
-package lecture15.gn8271;
-
-
-import static lecture15.gn8271.Flight.resetAllPassengers;
-import static lecture15.gn8271.Flight.getAllPassengers;
+package csc3020.lecture15.gn8271;
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture15
+// *
+import static csc3020.lecture15.gn8271.Flight.getAllPassengers;
+import static csc3020.lecture15.gn8271.Flight.resetAllPassengers;
 
 public class Lecture15Source {
     public static void main(String[] args) {
@@ -30,7 +33,7 @@ public class Lecture15Source {
 
         //Static Initialization Block
         System.out.println("Extracting Pilot");
-        CrewMember pilot=CrewManager.FindAvailable(FlightCrewJob.Pilot);
+        CrewMember pilot= CrewManager.FindAvailable(FlightCrewJob.Pilot);
         System.out.println(pilot);
 
         CrewMember[] pool=CrewManager.List();

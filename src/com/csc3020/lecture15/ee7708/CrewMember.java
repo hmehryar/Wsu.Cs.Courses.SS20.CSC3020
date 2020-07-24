@@ -1,4 +1,4 @@
-package lecture15.ee7708;
+package csc3020.lecture15.ee7708;
 
 public class CrewMember extends Person {
 

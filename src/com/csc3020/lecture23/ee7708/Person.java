@@ -1,4 +1,4 @@
-package lecture23.ee7708;
+package csc3020.lecture23.ee7708;
 
 public abstract class Person implements IPerson{
     private int id;

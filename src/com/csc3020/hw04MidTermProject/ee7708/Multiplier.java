@@ -1,4 +1,4 @@
-package hw04MidTermProject.ee7708;
+package csc3020.hw04MidTermProject.ee7708;
 
 public class Multiplier extends CalculateBase {
     public Multiplier(double leftValue, double rightValue) {

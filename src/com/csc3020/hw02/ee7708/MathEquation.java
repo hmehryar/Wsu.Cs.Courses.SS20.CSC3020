@@ -1,4 +1,4 @@
-package hw02.ee7708;
+package csc3020.hw02.ee7708;
 
 public class MathEquation {
 

@@ -1,8 +1,8 @@
-package lecture15.go1277;
+package csc3020.lecture15.go1277;
 
 
-import static lecture15.go1277.Flight.getAllPassengers;
-import static lecture15.go1277.Flight.resetAllPassengers;
+import static csc3020.lecture15.go1277.Flight.getAllPassengers;
+import static csc3020.lecture15.go1277.Flight.resetAllPassengers;
 
 public class Lecture15Source {
     public static void main(String[] args) {
