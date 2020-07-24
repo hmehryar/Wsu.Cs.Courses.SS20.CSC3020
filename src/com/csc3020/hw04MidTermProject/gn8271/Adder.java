@@ -1,8 +1,8 @@
-package hw04MidTermProject.gn8271;
+package csc3020.hw04MidTermProject.gn8271;
 
 public class Adder extends CalculateBase {
 
-    public Adder(double leftVal, double rightVal) {
+    public Adder (double leftVal, double rightVal) {
         super(leftVal, rightVal);
     }
 
