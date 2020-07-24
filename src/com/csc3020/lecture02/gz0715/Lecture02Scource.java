@@ -1,4 +1,4 @@
-package com.csc3020.lecture02.gz0715;
+package csc3020.lecture02.gz0715;
 
 public class Lecture02Scource {
     public static void main(String[] args)
@@ -9,7 +9,7 @@ public class Lecture02Scource {
         int myVar = 0;
         System.out.println(myVar);
 
-        myVar = 50;
+        myVar =50;
         System.out.println(myVar);
 
         int anotherVar = 100;

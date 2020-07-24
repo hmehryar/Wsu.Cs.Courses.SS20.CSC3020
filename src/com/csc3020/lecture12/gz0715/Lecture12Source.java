@@ -1,4 +1,4 @@
-package com.csc3020.lecture12.gz0715;
+package csc3020.lecture12.gz0715;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

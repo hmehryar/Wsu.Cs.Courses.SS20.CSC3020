@@ -1,4 +1,4 @@
-package com.csc3020.lecture10.gz0715;
+package csc3020.lecture10.gz0715;
 
 public class CargoFlight extends Flight {
     // Global variables or propertoes of CargoFlight
