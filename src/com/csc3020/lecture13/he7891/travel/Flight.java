@@ -1,4 +1,4 @@
-package com.csc3020.lecture13.he7891.travel;
+package csc3020.lecture13.he7891.travel;
 
 // *
 // Author: Nathan Tattrie
