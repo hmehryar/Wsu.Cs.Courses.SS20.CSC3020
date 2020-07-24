@@ -10,7 +10,7 @@ import csc3020.lecture13.go1277.xyzcompany.bar.Wine;
 
 public class Lecture13Source {
     public static void main(String[] args) {
-        //new lecture13.gn8271.Lecture13Source();
+
         Flight oFlight = new Flight();
         Flight oLecture11Flight = new Flight();
         CargoFlight oCargoFlight = new CargoFlight();
