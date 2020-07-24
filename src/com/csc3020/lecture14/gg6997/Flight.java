@@ -1,11 +1,11 @@
-package lecture14.gg6997;
+package csc3020.lecture14.gg6997;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Iterator;
 
-public class Flight implements Comparable<Flight>, Iterable<Person>{
+public class Flight implements Comparable<Flight>, Iterable<csc3020.lecture14.gg6997.Person>{
     static final int MAX_FAA_SEATS = 550;
     private int passengers;
     public int seats;
@@ -15,8 +15,8 @@ public class Flight implements Comparable<Flight>, Iterable<Person>{
     private int maxCarryOns, totalCarryOns;
     private int totalCheckedBags;
     private int flightTime; //minutes past midnight
-    private CrewMember[] crew;
-    private Passenger[] roster;
+    private csc3020.lecture14.gg6997.CrewMember[] crew;
+    private csc3020.lecture14.gg6997.Passenger[] roster;
 
     {
         seats = 150;
@@ -73,8 +73,8 @@ public class Flight implements Comparable<Flight>, Iterable<Person>{
     }
 
     @Override
-    public Iterator<Person> iterator() {
-        return new FlightIterator(crew, roster);
+    public Iterator<csc3020.lecture14.gg6997.Person> iterator() {
+        return new csc3020.lecture14.gg6997.FlightIterator(crew, roster);
     }
 
     @Override
@@ -123,11 +123,11 @@ public class Flight implements Comparable<Flight>, Iterable<Person>{
         System.out.println("Flight[ seats = " + seats + ", passengers = " + passengers + "]");
     }
 
-    public void addCrewMembers(CrewMember[] crew) {
+    public void addCrewMembers(csc3020.lecture14.gg6997.CrewMember[] crew) {
         this.crew = crew;
     }
 
-    public void addPassengers(Passenger[] roster) {
+    public void addPassengers(csc3020.lecture14.gg6997.Passenger[] roster) {
         this.roster = roster;
     }
 
@@ -163,7 +163,7 @@ public class Flight implements Comparable<Flight>, Iterable<Person>{
         }
     }
 
-    public void add1Passenger(Passenger p) {
+    public void add1Passenger(csc3020.lecture14.gg6997.Passenger p) {
         add1Passenger(p.getCheckedBags());
     }
 
@@ -174,7 +174,7 @@ public class Flight implements Comparable<Flight>, Iterable<Person>{
         }
     }
 
-    public void add1Passenger(Passenger p, int carryOns) {
+    public void add1Passenger(csc3020.lecture14.gg6997.Passenger p, int carryOns) {
         add1Passenger(p.getCheckedBags(), carryOns);
     }
 

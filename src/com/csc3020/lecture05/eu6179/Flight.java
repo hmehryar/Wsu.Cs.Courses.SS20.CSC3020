@@ -1,35 +1,32 @@
 package com.csc3020.lecture05.eu6179;
 
 public class Flight {
-    //Lecture 05
-    private int passengers;
-    private int seats;
+    int passengers;
+    int seats;
 
-    public Flight() {
-
+    public Flight(){
         seats = 150;
         passengers = 0;
+        flightSecurityName = "George";
     }
 
-    public void add1Passenger() {
-        if (passengers < seats) {
+    void add1Passengers() {
+        if (passengers < seats)
             passengers += 1;
-            //passengers++
-        } else {
+        else
             handleTooMany();
-
-        }
+        com.csc3020.lecture05.eu6179.Flight.Internal oInternal = new com.csc3020.lecture05.eu6179.Flight.Internal();
     }
-        private void handleTooMany () {
-            System.out.println("That's Too Many");
-        }
-        public boolean hasRoom(Flight f2){
 
-        int total = passengers + f2.passengers;
-        return total <= seats;
+    private String flightSecurityName;
 
-        }
+    class Internal{
+
     }
+    private void handleTooMany(){
+        System.out.println("Too many");
+    }
+}
 
 
 

@@ -1,4 +1,4 @@
-package lecture10.av7071;
+package csc3020.lecture10.av7071;
 
 public class Passenger {
     private int checkedBags;

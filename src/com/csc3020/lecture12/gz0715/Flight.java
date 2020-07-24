@@ -1,10 +1,8 @@
-package com.csc3020.lecture12.gz0715;
+package csc3020.lecture12.gz0715;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
 
 // Lecture 05: Class//
 public class Flight{

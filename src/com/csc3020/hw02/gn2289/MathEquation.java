@@ -1,4 +1,4 @@
-package com.csc3020.hw2.gn2289;
+package csc3020.hw02.gn2289;
 
 public class MathEquation {
 

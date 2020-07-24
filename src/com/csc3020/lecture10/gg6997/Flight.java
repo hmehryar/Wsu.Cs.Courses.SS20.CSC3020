@@ -1,4 +1,4 @@
-package com.csc3020.lecture10.gg6997;
+package csc3020.lecture10.gg6997;
 
 public class Flight {
     public int passengers;
@@ -89,7 +89,7 @@ public class Flight {
             totalCheckedBags+=bags;
         }
     }
-    public void add1Passenger(Passenger p){
+    public void add1Passenger(csc3020.lecture10.gg6997.Passenger p){
         add1Passenger(p.getCheckedBags());
     }
     public void add1Passenger(int bags, int carryOns){
@@ -100,7 +100,7 @@ public class Flight {
             totalCarryOns+=carryOns;
         }
     }
-    public void add1Passenger(Passenger p, int carryOns){
+    public void add1Passenger(csc3020.lecture10.gg6997.Passenger p, int carryOns){
         add1Passenger(p.getCheckedBags(),carryOns);
     }
 

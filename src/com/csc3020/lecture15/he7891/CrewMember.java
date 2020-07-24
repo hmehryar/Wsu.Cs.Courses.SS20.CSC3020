@@ -1,4 +1,4 @@
-package com.csc3020.lecture15.he7891;
+package csc3020.lecture15.he7891;
 
 public class CrewMember extends Person {
     private FlightCrewJob job;

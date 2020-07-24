@@ -1,4 +1,4 @@
-package com.csc3020.lecture05.gz0715;
+package csc3020.lecture05.gz0715;
 
 public class CalculateEngine {
     public void showSum(float x, float y, int count) {

@@ -1,4 +1,4 @@
-package com.csc3020.lecture15.he7891;
+package csc3020.lecture15.he7891;
 /*
 * Author: Nathan Tattrie
 * Student ID: he7891
@@ -46,8 +46,8 @@ package com.csc3020.lecture15.he7891;
 * ~~~~~ Place implementation code within the brackets
 * */
 
-import static com.csc3020.lecture15.he7891.Flight.resetAllPassengers;
-import static com.csc3020.lecture15.he7891.Flight.getAllPassengers;
+import static csc3020.lecture15.he7891.Flight.resetAllPassengers;
+import static csc3020.lecture15.he7891.Flight.getAllPassengers;
 
 public class Lecture15Source {
     public static void main(String[] args) {

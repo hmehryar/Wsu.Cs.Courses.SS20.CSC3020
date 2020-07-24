@@ -1,4 +1,4 @@
-package com.csc3020.hw04MidTermProject.he7891;
+package csc3020.hw04MidTermProject.he7891;
 /*
  * Author: Nathan Tattrie
  * Student ID: he7891

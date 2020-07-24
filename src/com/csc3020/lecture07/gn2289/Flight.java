@@ -1,4 +1,4 @@
-package com.csc3020.lecture07.gn2289;
+package csc3020.lecture07.gn2289;
 public class Flight {
     private int passengers = 0;
     private int seats;

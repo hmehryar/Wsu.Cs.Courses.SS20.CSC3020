@@ -1,4 +1,4 @@
-package com.csc3020.lecture13.hc7391.vinson.travel;
+package csc3020.lecture13.hc7391.vinson.travel;
 
     public class Passenger {
     private int checkedBags;

@@ -1,4 +1,6 @@
-package com.csc3020.lecture10.gg6997;
+package csc3020.lecture10.gg6997;
+
+import csc3020.lecture10.gg6997.Flight;
 
 public abstract class Pilot {
     private Flight currentFlight;
