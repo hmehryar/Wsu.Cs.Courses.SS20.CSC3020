@@ -1,45 +1,55 @@
-package lecture09.gn8271;
-//Lecture 09
+package csc3020.lecture09.gn8271;
+// *
 // Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture09
+// *
 public class Passenger {
-    // Variables
     private int checkedBags;
     private int freeBags;
-    private double perBagFee;
 
-    // Constructors
-    public Passenger() {}
-    public Passenger(int freeBags) {
-        this((freeBags > 1) ? 25.0d : 50.0d);
-        this.freeBags = freeBags;
-    }
-    public Passenger(int freeBags, int checkBags) {
-        //this.freeBags = freeBags;
-        this(freeBags); // Constructor chaining
-        this.checkedBags = checkedBags;
-    }
-    private Passenger(double perBagFee){
-        this.perBagFee = perBagFee;
-    }
-
-    // Getter and Setter Functions
     public int getCheckedBags() {
         return checkedBags;
     }
-    public void setCheckBags(int checkBags) {
-        this.checkedBags = checkBags;
+    public void setCheckedBags(int checkedBags) {
+        this.checkedBags = checkedBags;
     }
+
     public int getFreeBags() {
         return freeBags;
     }
     public void setFreeBags(int freeBags) {
         this.freeBags = freeBags;
     }
+
+    private double perBagFee;
+
     public double getPerBagFee() {
         return perBagFee;
     }
+
     public void setPerBagFee(double perBagFee) {
         this.perBagFee = perBagFee;
     }
+    public Passenger(){}
+    public Passenger(int freeBags){
+        this(freeBags>1?25.0d:50.0d);
+//          if(freeBags>1){
+//
+//              perBagFee=25.0d;
+//          }else{
+//              perBagFee=50.0d;
+//          }
 
+        this.freeBags=freeBags;
+
+    }
+    public Passenger(int freeBags,int checkedBags){
+        //this.freeBags=freeBags;
+        this(freeBags);
+        this.checkedBags=checkedBags;
+    }
+    private Passenger(double perBagFee){
+        this.perBagFee=perBagFee;
+    }
 }

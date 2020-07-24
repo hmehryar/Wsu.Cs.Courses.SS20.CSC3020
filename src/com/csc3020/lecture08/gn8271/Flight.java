@@ -1,14 +1,17 @@
-package lecture08.gn8271;
-//Lecture 08 - Lab03
+package csc3020.lecture08.gn8271;
+// *
 // Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture08
+// *
 public class Flight {
     public int passengers;
     public int seats;
-    private boolean [] isSeatAvailable;
+    private boolean[] isSeatAvailable;
     private int flightNumber;
     private char flightClass;
     private int maxCarryOns, totalCarryOns;
-    //     = seats * 2
+//     = seats * 2
     private int totalCheckedBags;
     {
         seats = 150;
