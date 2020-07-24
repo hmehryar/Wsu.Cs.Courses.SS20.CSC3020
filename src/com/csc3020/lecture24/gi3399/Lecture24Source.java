@@ -9,8 +9,6 @@ public class Lecture24Source {
         //Data Access Object Interface: Method's Signature
         //Data Access Object Implentation: Method's Body: Class
         //Model/Value Object: Class
-
-
         //CRUD: Create, Retrieve, Update, Delete
         //Product
 

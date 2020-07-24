@@ -6,7 +6,6 @@ public class Product {
     private int id;
     private double price;
 
-
     public String getTitle() {
         return title;
     }

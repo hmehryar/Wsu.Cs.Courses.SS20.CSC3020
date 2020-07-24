@@ -15,7 +15,6 @@ public class ProductDaoImpl implements ProductDao {
         products.add(oProduct1);
         products.add(oProduct2);
         products.add(oProduct3);
-
     }
 
     @Override
