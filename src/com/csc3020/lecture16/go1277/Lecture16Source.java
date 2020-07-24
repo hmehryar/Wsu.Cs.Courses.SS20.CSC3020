@@ -1,4 +1,4 @@
-package lecture16.go1277;
+package csc3020.lecture16.go1277;
 
 import java.io.IOException;
 import java.io.Reader;
