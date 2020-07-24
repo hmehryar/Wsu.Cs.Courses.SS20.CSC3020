@@ -1,4 +1,4 @@
-package lecture19.ee7708;
+package csc3020.lecture19.ee7708;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

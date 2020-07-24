@@ -1,4 +1,4 @@
-package lecture12.ee7708;
+package csc3020.lecture12.ee7708;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
