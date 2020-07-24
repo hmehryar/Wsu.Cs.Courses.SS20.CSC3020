@@ -1,4 +1,4 @@
-package com.csc3020.hw05.he7891;
+package csc3020.hw05.he7891;
 
 public class Divider extends CalculateBase {
     @Override
