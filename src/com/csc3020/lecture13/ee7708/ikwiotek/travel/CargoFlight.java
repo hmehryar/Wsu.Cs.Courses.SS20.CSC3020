@@ -1,4 +1,4 @@
-package lecture13.ee7708.ikwiotek.travel;
+package csc3020.lecture13.ee7708.ikwiotek.travel;
 
 import java.io.IOException;
 

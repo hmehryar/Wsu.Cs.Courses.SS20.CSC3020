@@ -1,4 +1,4 @@
-package lecture10.ee7708;
+package csc3020.lecture10.ee7708;
 
 public abstract class Pilot {
     private Flight currentFlight;

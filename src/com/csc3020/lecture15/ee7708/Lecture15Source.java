@@ -1,4 +1,4 @@
-package lecture15.ee7708;
+package csc3020.lecture15.ee7708;
 
 import static lecture15.ee7708.Flight.getAllPassengers;
 import static lecture15.ee7708.Flight.resetAllPassengers;
