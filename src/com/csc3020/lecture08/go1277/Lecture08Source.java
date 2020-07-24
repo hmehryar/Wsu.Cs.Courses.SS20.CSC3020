@@ -1,4 +1,4 @@
-package lecture08.go1277;
+package csc3020.lecture08.go1277;
 
 public class Lecture08Source {
     public static void main(String[] args) {
