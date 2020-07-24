@@ -1,6 +1,5 @@
-package lecture12.gn8271;
-//Lecture 12
-// Author: Raisa Zaman
+package csc3020.lecture12.gn8271;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -59,17 +58,15 @@ public class Lecture12Source {
             System.out.println("Error: "+oException.getMessage());
         }
         finally {
-            try{
-                if(reader!=null)
-                    reader.close();
-            }catch (Exception oReaderException){
-                System.out.println("Error: "+oReaderException.getMessage());
-            }
-
+        try{
+            if(reader!=null)
+                reader.close();
+        }catch (Exception oReaderException){
+            System.out.println("Error: "+oReaderException.getMessage());
         }
+
+    }
 
 
     }
 }
-
-
