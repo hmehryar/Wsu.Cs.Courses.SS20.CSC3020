@@ -1,4 +1,4 @@
-package lecture14.ee7708;
+package csc3020.lecture14.ee7708;
 
 public class Person {
     

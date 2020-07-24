@@ -1,4 +1,4 @@
-package lecture08.ee7708;
+package csc3020.lecture08.ee7708;
 
 public class Lecture08Source {
 

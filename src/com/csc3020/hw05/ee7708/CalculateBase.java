@@ -1,4 +1,4 @@
-package hw05.ee7708;
+package csc3020.hw05.ee7708;
 
 public abstract class CalculateBase {
     private double leftValue;
