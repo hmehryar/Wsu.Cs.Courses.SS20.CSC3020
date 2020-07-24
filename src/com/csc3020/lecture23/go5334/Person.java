@@ -1,0 +1,28 @@
+package com.csc3020.lecture23.go5334;
+
+public abstract class Person implements IPerson{
+    private int id;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public void walk() {
+
+    }
+
+    @Override
+    public int see() {
+        return 0;
+    }
+
+    @Override
+    public double smell() {
+        return 0;
+    }
+}

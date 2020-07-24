@@ -1,4 +1,4 @@
-package com.csc3020.lecture10.gz0715;
+package csc3020.lecture10.gz0715;
 
 public class FullLicensePilot extends Pilot{
     @Override

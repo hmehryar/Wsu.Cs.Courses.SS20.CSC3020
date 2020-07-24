@@ -1,4 +1,4 @@
-package lecture22.gg6997;
+package csc3020.lecture22.gg6997;
 
 import java.io.BufferedReader;
 import java.nio.file.Files;

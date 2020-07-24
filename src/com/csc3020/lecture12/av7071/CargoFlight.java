@@ -1,4 +1,4 @@
-package lecture12.av7071;
+package csc3020.lecture12.av7071;
 
 import java.io.IOException;
 

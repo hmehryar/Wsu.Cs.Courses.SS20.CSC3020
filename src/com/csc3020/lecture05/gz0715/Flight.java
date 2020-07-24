@@ -1,4 +1,4 @@
-package com.csc3020.lecture05.gz0715;
+package csc3020.lecture05.gz0715;
 // Lecture 05: Class//
 public class Flight extends com.csc3020.lecture05.he7891.Flight {
     private int passengers;

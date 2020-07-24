@@ -1,4 +1,4 @@
-package com.csc3020.lecture13.gn2289.xyzcompany.bar;
+package csc3020.lecture13.gn2289.xyzcompany.bar;
 
 public class Beer {
 }

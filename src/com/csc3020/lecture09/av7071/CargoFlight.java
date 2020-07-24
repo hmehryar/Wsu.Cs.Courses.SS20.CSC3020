@@ -1,4 +1,4 @@
-package lecture09.av7071;
+package csc3020.lecture09.av7071;
 
 public class CargoFlight  extends Flight {
 

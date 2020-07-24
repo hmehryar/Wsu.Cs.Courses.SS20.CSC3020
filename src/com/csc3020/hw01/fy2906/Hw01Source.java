@@ -1,4 +1,4 @@
-package com.csc3020.hw01.fy2906;
+package csc3020.hw01.fy2906;
 
 public class Hw01Source {
     public static void main(String[] args) {
