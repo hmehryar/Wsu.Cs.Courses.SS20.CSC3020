@@ -1,8 +1,12 @@
-package com.csc3020.lecture08.gg6997;
+package csc3020.lecture08.gg6997;
 
 // Manraj Singh
 // Lecture 08
 // 05/28/2020
+
+import csc3020.lecture08.gg6997.Flight;
+import csc3020.lecture08.gg6997.Passenger;
+
 public class Lecture08Source {
     public static void main(String[] args) {
 

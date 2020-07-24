@@ -1,4 +1,4 @@
-package hw04MidTermProject.gn8271;
+package csc3020.hw04MidTermProject.gn8271;
 
 public class Divider extends CalculateBase {
 

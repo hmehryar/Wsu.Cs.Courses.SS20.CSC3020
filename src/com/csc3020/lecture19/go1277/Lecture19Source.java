@@ -1,4 +1,4 @@
-package lecture19.go1277;
+package csc3020.lecture19.go1277;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

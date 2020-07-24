@@ -1,4 +1,4 @@
-package hw03.gn8271;
+package csc3020.hw03.gn8271;
 // Homework03
 // Author: Raisa Zaman
 public class MathEquation {

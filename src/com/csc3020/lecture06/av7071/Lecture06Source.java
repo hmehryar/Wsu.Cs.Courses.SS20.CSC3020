@@ -1,7 +1,9 @@
-package com.csc3020.lecture06.av7071;
+package csc3020.lecture06.av7071;
+
 /**
  * Author: Kevin Kluka
  */
+
 public class Lecture06Source {
     public static void main(String[] args) {
         Flight oFlight1 = new Flight();

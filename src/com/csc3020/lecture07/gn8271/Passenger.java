@@ -1,10 +1,10 @@
-package lecture07.gn8271;
-//Lecture 07
+package csc3020.lecture07.gn8271;
+// *
 // Author: Raisa Zaman
-import java.util.concurrent.ScheduledExecutorService;
-
+// Student ID: gn8271
+// Lecture07
+// *
 public class Passenger {
-
     private int checkedBags;
     private int freeBags;
 

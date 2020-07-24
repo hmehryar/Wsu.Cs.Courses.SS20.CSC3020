@@ -1,4 +1,4 @@
-package hw04MidTermProject.ee7708;
+package csc3020.hw04MidTermProject.ee7708;
 
 //This program demonstrates an example using the toString() method
 //to get a meaningful String representation from an Enum instance in Java.

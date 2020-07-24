@@ -1,4 +1,4 @@
-package com.csc3020.lecture05.gz0715;
+package csc3020.lecture05.gz0715;
 //*
 //Author: Mirza Saim Saqib Beg
 // */

@@ -1,4 +1,4 @@
-package lecture20.gn2289;
+package csc3020.lecture20.gn2289;
 
 import java.util.Objects;
 

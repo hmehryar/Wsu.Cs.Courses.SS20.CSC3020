@@ -1,4 +1,4 @@
-package hw04MidTermProject.gg6997;
+package csc3020.hw04MidTermProject.gg6997;
 
 //abstract class CalculateBase so it can't create objects;
 //only must be inherited from another class

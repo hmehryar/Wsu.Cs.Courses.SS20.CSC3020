@@ -1,4 +1,4 @@
-package com.csc3020.lecture06.gg6997;
+package csc3020.lecture06.gg6997;
 
 /*
  * Author: Manraj Singh
@@ -6,6 +6,9 @@ package com.csc3020.lecture06.gg6997;
  * Lecture 06: Complex Data Types
  * Date: 05/21/2020
  * */
+
+import csc3020.lecture06.gg6997.Flight;
+
 public class Lecture06Source {
     public static void main(String[] args){
 

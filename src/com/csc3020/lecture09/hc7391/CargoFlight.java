@@ -1,4 +1,4 @@
-package com.csc3020.lecture09.hc7391;
+package csc3020.lecture09.hc7391;
 // extends allows inheritance
 public class CargoFlight extends Flight {
    public float maximumCargoSpace = 1000.0f;

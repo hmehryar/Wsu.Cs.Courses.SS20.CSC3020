@@ -1,6 +1,5 @@
-package lecture12.gn8271;
-//Lecture 12
-// Author: Raisa Zaman
+package csc3020.lecture12.gn8271;
+
 public class CrewMember {
     private FlightCrewJob job;
 
@@ -23,4 +22,3 @@ public class CrewMember {
                 '}';
     }
 }
-

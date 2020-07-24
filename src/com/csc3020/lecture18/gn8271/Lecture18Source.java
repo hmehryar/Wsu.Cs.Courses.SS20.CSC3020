@@ -1,136 +1,135 @@
-package lecture18.gn8271;
+package csc3020.lecture18.gn8271;
 
 import java.io.*;
-
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture18
+// *
 public class Lecture18Source {
-    public static void main(String[] args) {
-        System.out.println("\n---------------------");
-            doTryCatchFinally();
-        System.out.println("\n---------------------");
-            doTryCatchSources();
-        System.out.println("\n---------------------");
-            doTryWithMultiResources();
-        System.out.println("\n---------------------");
-            doClosingThing();
-        System.out.println("\n---------------------");
-            doBufferedStreaming();
-        System.out.println("\n---------------------");
-            String[] data = {
-                    "Line 1",
-                    "Line 2 2",
-                    "Line 3 3 3",
-                    "Line 4 4 4 4",
-                    "Line 5 5 5 5 5",};
-            doBufferedWriting(data);
-        System.out.println("\n---------------------");
-            try {
-                doBufferedReadlingLine();
-            } catch (IOException ioException) {
-                ioException.printStackTrace();
-            }
-        System.out.println("\n---------------------");
-    }
-
-    public static void doTryCatchFinally() {
-        char[] buff = new char[8];
-        int length;
-        Reader reader = null;
-
+    public static void main(String[] args)  {
+        doTryCatchFinally();
+        System.out.println("-----------------------------");
+        doTryWithResources();
+        System.out.println("-----------------------------");
+        doTryWithMultiResources();
+        System.out.println("-----------------------------");
+        doClosingThing();
+        System.out.println("-----------------------------");
+        doBufferedReading();
+        System.out.println("-----------------------------");
+        System.out.println("doBufferedWriting");
+        String[] data={
+                "Line 1",
+                "Line 2 2",
+                "Line 3 3 3",
+                "Line 4 4 4 4",
+                "Line 5 5 5 5 5"};
+        doBufferedWriting(data);
+        System.out.println("-----------------------------");
         try {
-            reader = Helper.openReader("file1.txt");
-            while ((length = reader.read(buff)) >= 0) {
-                System.out.println("\nlength: " + length);
-                for (int i = 0; i < length; i++) {
-                    System.out.print(buff[i]);
+            doBufferedReadingLineByLine();
+        } catch (IOException ioException) {
+            ioException.printStackTrace();
+        }
+        System.out.println("-----------------------------");
+
+    }
+    public static void doTryCatchFinally(){
+        char[] buff=new char[8];
+        int length;
+        Reader reader=null;
+        try{
+            reader= Helper.openReader("file1.txt");
+            while ((length= reader.read(buff))>=0){
+                System.out.println("\nlength: "+length);
+                for (int index = 0; index <length ; index++) {
+                    System.out.print(buff[index]);
                 }
             }
-        } catch (IOException e) {
-            System.out.println(e.getClass().getSimpleName() + " _ " + e.getMessage());
-        } finally {
-            try {
-                if (reader != null)
+            System.out.println();
+        }catch (IOException exception){
+            System.out.println(exception.getClass().getSimpleName()+" _ "+exception.getMessage());
+        }finally {
+            try{
+                if(reader!=null)
                     reader.close();
-            } catch (IOException e) {
-                System.out.println(e.getClass().getSimpleName() + " _ " + e.getMessage());
+            }catch (IOException exception){
+                System.out.println(exception.getClass().getSimpleName()+" _ "+exception.getMessage());
             }
         }
     }
-
-    public static void doTryCatchSources() {
-        char[] buff = new char[8];
+    public static void doTryWithResources(){
+        char[] buff=new char[8];
         int length;
-
-        try (Reader reader = Helper.openReader("file1.txt")) {
-
-            while ((length = reader.read(buff)) >= 0) {
-                System.out.println("\nlength: " + length);
-                for (int i = 0; i < length; i++) {
-                    System.out.print(buff[i]);
+        //Reader reader=null;
+        try(Reader reader= Helper.openReader("file1.txt")){
+            while ((length= reader.read(buff))>=0){
+                System.out.println("\nlength: "+length);
+                for (int index = 0; index <length ; index++) {
+                    System.out.print(buff[index]);
                 }
             }
-        } catch (IOException e) {
-            System.out.println(e.getClass().getSimpleName() + " _ " + e.getMessage());
+            System.out.println();
+        }catch (IOException exception){
+            System.out.println(exception.getClass().getSimpleName()+" _ "+exception.getMessage());
         }
     }
-
-    public static void doTryWithMultiResources() {
-        char[] buff = new char[8];
+    public static void doTryWithMultiResources(){
+        char[] buff=new char[8];
         int length;
-        try (Reader reader = Helper.openReader("file1.txt");
-             Writer writer = Helper.openWriter("file2.txt")) {
-            while ((length = reader.read(buff)) >= 0) {
-                System.out.println("\nlength: " + length);
-                for (int i = 0; i < length; i++) {
-                    System.out.print(buff[i]);
-                }
-                writer.write(buff, 0, length);
+        try(Reader reader= Helper.openReader("file1.txt");
+            Writer writer= Helper.openWriter("file2.txt")){
+            while((length=reader.read(buff))>=0){
+                System.out.println("\nlength: "+length);
+                writer.write(buff,0,length);
             }
-        } catch (IOException e) {
-            System.out.println(e.getClass().getSimpleName() + " _ " + e.getMessage());
+            System.out.println();
+        }catch (IOException exception){
+            System.out.println(exception.getClass().getSimpleName()+" _ "+exception.getMessage());
         }
     }
-
-    public static void doClosingThing() {
-        try (MyAutoClosable myAutoClosable = new MyAutoClosable()) {
-            throw new Exception("La di da.");
-            //myAutoClosable.saySomething();
-        } catch (Exception e) {
-            System.out.println(e.getClass().getSimpleName() + " _ " + e.getMessage());
-            for (Throwable throwable : e.getSuppressed()) {
-                System.out.println("Suppressed: " + throwable.getClass().getSimpleName() + " _ " + throwable.getMessage());
+    public static void doClosingThing(){
+        try(MyAutoClosable oMyAutoClosable=new MyAutoClosable()){
+            //throw  new Exception("New Exception");
+            oMyAutoClosable.saySomething();
+        }catch (Exception exception){
+            System.out.println(exception.getClass().getSimpleName() +" _ "+ exception.getMessage());
+            for (Throwable throwable : exception.getSuppressed()  ) {
+                System.out.println("Suppressed: "+ throwable.getMessage());
             }
         }
     }
-
-    public static void doBufferedStreaming() {
-        try (BufferedReader oBufferedReader = new BufferedReader(new FileReader("file1.txt"))) {
+    public static void doBufferedReading(){
+        try(BufferedReader oBufferedReader=new BufferedReader(new FileReader("file1.txt"))){
             int intVal;
-            while ((intVal = oBufferedReader.read()) >= 0) {
-                char charVal = (char) intVal;
+            while((intVal=oBufferedReader.read())>=0){
+                char charVal=(char) intVal;
                 System.out.print(charVal);
             }
-        } catch (FileNotFoundException fileNotFoundException) {
-            fileNotFoundException.printStackTrace();
+            System.out.println();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
         } catch (IOException ioException) {
             ioException.printStackTrace();
         }
     }
 
-    public static void doBufferedWriting(String[] data){
-        try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter("data.txt"))) {
-            for (String stringItem: data) {
-                bufferedWriter.write(stringItem);
-                bufferedWriter.newLine();
+    public static void doBufferedWriting(String[] data) {
+        try(BufferedWriter oBufferedWriter=new BufferedWriter(new FileWriter("data.txt"))){
+            for (String stringItem:data) {
+                oBufferedWriter.write(stringItem);
+                oBufferedWriter.newLine();
             }
-        } catch (IOException ioException) {
+        }
+        catch (IOException ioException) {
             ioException.printStackTrace();
         }
     }
-
-    public static void doBufferedReadlingLine() throws IOException {
-        try (BufferedReader bufferedReader = new BufferedReader(new FileReader("data.txt"))) {
+    public  static  void doBufferedReadingLineByLine() throws IOException{
+        try(BufferedReader oBufferedReader=new BufferedReader(new FileReader("data.txt"))){
             String strValue;
-            while ((strValue = bufferedReader.readLine()) != null) {
+            while( (strValue= oBufferedReader.readLine())!=null){
                 System.out.println(strValue);
             }
         }

@@ -1,14 +1,14 @@
-package lecture13.gg6997.msingh.travel;
+package csc3020.lecture13.gg6997.msingh.travel;
 
 public class Passenger {
     private int checkedBags;
     private final int freeBags;
-    private Flight relatedFlight;
+    private csc3020.lecture13.gg6997.msingh.travel.Flight relatedFlight;
 
     private double perBagFee;
     public Passenger() {
         freeBags = 0;
-        relatedFlight = new Flight();
+        relatedFlight = new csc3020.lecture13.gg6997.msingh.travel.Flight();
         relatedFlight.legacyFlightNumber = 0;
     }
 

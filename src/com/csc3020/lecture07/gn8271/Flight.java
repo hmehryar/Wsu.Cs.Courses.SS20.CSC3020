@@ -1,12 +1,13 @@
-package lecture07.gn8271;
-//Lecture 07
+package csc3020.lecture07.gn8271;
+// *
 // Author: Raisa Zaman
-// Lecture 07: Constructor//
+// Student ID: gn8271
+// Lecture07
+// *
 public class Flight {
-
     public int passengers;
     public int seats;
-    private boolean [] isSeatAvailable;
+    private boolean[] isSeatAvailable;
     private int flightNumber;
     private char flightClass;
 

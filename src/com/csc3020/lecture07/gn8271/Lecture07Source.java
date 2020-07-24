@@ -1,8 +1,10 @@
-package lecture07.gn8271;
-//Lecture 07
+package csc3020.lecture07.gn8271;
+// *
 // Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture07
+// *
 public class Lecture07Source {
-
     public static void main(String[] args) {
         Earth oEarth=new Earth();
         System.out.println(oEarth.circumferenceInMiles);
@@ -36,4 +38,3 @@ public class Lecture07Source {
         System.out.println(joe.getFreeBags()+","+joe.getCheckedBags()+","+joe.getPerBagFee() );
     }
 }
-

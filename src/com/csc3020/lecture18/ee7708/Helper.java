@@ -1,4 +1,4 @@
-package lecture18.ee7708;
+package csc3020.lecture18.ee7708;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

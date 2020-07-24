@@ -1,6 +1,5 @@
-package lecture12.gn8271;
-//Lecture 12
-// Author: Raisa Zaman
+package csc3020.lecture12.gn8271;
+
 import java.io.IOException;
 
 public class CargoFlight extends Flight {
@@ -58,4 +57,3 @@ public class CargoFlight extends Flight {
         System.out.println("Max Cargo Space= "+maxCargoSpace+", Used Cargo Space= "+usedCargoSpace);
     }
 }
-

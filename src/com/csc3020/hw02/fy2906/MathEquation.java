@@ -1,4 +1,4 @@
-package com.csc3020.hw02.fy2906;
+package csc3020.hw02.fy2906;
 
 public class MathEquation {
     private double leftValue;
