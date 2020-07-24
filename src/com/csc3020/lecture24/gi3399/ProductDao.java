@@ -1,4 +1,4 @@
-package csc3020.lecture24.gi3399;
+package com.csc3020.lecture24.gi3399;
 
 import java.util.List;
 
