@@ -1,4 +1,4 @@
-package csc3020.lecture21.go1277;
+package csc3020.lecture20.go1277;
 
 public class MyClass implements Comparable<MyClass>{
     private String label,value;
@@ -35,13 +35,5 @@ public class MyClass implements Comparable<MyClass>{
     @Override
     public int compareTo(MyClass o) {
         return value.compareToIgnoreCase(o.value);
-    }
-
-    @Override
-    public String toString() {
-        return "MyClass{" +
-                "label='" + label + '\'' +
-                ", value='" + value + '\'' +
-                '}';
     }
 }

@@ -1,4 +1,4 @@
-package lecture22.go1277;
+package csc3020.lecture22.go1277;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.nio.file.Files;
