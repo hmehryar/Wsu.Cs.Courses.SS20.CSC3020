@@ -1,4 +1,4 @@
-package lecture21.go1277;
+package csc3020.lecture21.go1277;
 
 public class MyClass implements Comparable<MyClass>{
     private String label,value;

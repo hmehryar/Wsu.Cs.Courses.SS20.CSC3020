@@ -1,4 +1,4 @@
-package hw05.ee7708;
+package csc3020.hw05.ee7708;
 
 public class Divider extends CalculateBase {
     public Divider(double leftValue, double rightValue) {

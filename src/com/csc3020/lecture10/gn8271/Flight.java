@@ -1,6 +1,9 @@
-package lecture10.gn8271;
-//Lecture 10
+package csc3020.lecture10.gn8271;
+// *
 // Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture10
+// *
 public class Flight {
     public int passengers;
     public int seats;
@@ -8,7 +11,7 @@ public class Flight {
     private int flightNumber;
     private char flightClass;
     private int maxCarryOns, totalCarryOns;
-    //     = seats * 2
+//     = seats * 2
     private int totalCheckedBags;
     {
         seats = 150;
@@ -47,7 +50,7 @@ public class Flight {
         Flight other=(Flight)o;
         return
                 flightClass==other.flightClass &&
-                        flightNumber==other.flightNumber;
+                flightNumber==other.flightNumber;
     }
     public int getSeat(){
         return  150;

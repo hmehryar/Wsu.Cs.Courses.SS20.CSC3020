@@ -1,4 +1,4 @@
-package lecture22.ee7708;
+package csc3020.lecture22.ee7708;
 
 import java.io.BufferedReader;
 import java.nio.file.Files;

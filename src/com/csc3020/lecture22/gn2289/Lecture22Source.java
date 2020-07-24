@@ -1,46 +1,50 @@
 package csc3020.lecture22.gn2289;
-
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture22
+// *
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 
 public class Lecture22Source {
     public static void main(String[] args) {
-//        if(args.length < 1) {
-//            System.out.println("No arguments");
-//        }else{
+        //hm "hm19 56"
+//        if (args.length<1){
+//            System.out.println("No arguments provided");
+//        }else {
 //            for (String word:args) {
 //                System.out.println(word);
 //            }
 //        }
-
-        if(args.length == 0) {
+        if (args.length==0){
             showUsage();
             return;
         }
-        String fileName = args[0];
-        if (Files.exists(Paths.get(fileName))) {
-            System.out.println("\n File not found: "+fileName);
+        String fileName=args[0];
+        if (!Files.exists(Paths.get(fileName))){
+            System.out.println("\n File Not Found: "+fileName);
+            return;
         }
         showFileLines(fileName);
-    }
 
-    public static void showUsage() {
-        System.out.println("Lecture 22");
-        System.out.println("this code can read filestream");
     }
-
-    public static void showFileLines(String fileName) {
-        System.out.println("in method");
-        try(BufferedReader oBufferedReader = Files.newBufferedReader(Paths.get(fileName))) {
-            String line = null;
-            while((line = oBufferedReader.readLine()) != null) {
+    private  static void showFileLines(String fileName){
+        System.out.println();
+        try(BufferedReader oBufferedReader=Files.newBufferedReader(Paths.get(fileName))){
+            String  line=null;
+            while( (line= oBufferedReader.readLine())!=null){
                 System.out.println(line);
             }
-        }catch (Exception e) {
-            System.out.println(e.getClass().getSimpleName()+" : "+e.getMessage());
+
+        }catch (Exception oException){
+            System.out.println(oException.getClass().getSimpleName()+" : "+oException.getMessage());
         }
+    }
+    private static void showUsage(){
+        System.out.println("Welcome to lecture 22");
+        System.out.println("This code can read a file stream");
+        System.out.println("arg: fileName.txt");
     }
 }

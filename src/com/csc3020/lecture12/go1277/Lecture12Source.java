@@ -1,6 +1,5 @@
-package lecture12.go1277;
-//Lecture 12
-// Author: Tia Gijo
+package csc3020.lecture12.go1277;
+
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

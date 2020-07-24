@@ -1,7 +1,11 @@
-package lecture20.gn8271;
+package csc3020.lecture20.gn8271;
 
 import java.util.*;
-
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture20
+// *
 public class Lecture20Source {
     public static void main(String[] args) {
         ArrayList list=new ArrayList();

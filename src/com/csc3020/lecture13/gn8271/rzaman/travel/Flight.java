@@ -1,4 +1,4 @@
-package lecture13.gn8271.rzaman.travel;
+package csc3020.lecture13.gn8271.rzaman.travel;
 //package com.rzaman.travel;
 
 import java.io.BufferedReader;

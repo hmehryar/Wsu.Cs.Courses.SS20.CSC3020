@@ -1,5 +1,9 @@
-package lecture15.gn8271;
-
+package csc3020.lecture15.gn8271;
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture15
+// *
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -19,7 +23,7 @@ public class CrewManager {
             pool=new CrewMember[10];
             while ((line=oBufferedReader.readLine())!=null){
                 String[] parts=line.split(",");
-                FlightCrewJob job=FlightCrewJob.valueOf(parts[0]);
+                FlightCrewJob job= FlightCrewJob.valueOf(parts[0]);
                 pool[index]=new CrewMember(job);
                 pool[index].setName(parts[1]);
                 index++;

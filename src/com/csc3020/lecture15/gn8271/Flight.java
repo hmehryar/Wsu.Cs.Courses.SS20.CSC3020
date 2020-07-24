@@ -1,5 +1,9 @@
-package lecture15.gn8271;
-
+package csc3020.lecture15.gn8271;
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture15
+// *
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -65,7 +69,7 @@ public class Flight implements Comparable<Flight>,Iterable<Person> {
             }
         };
     }
-    //    private class FlightIterator implements Iterator<Person>{
+//    private class FlightIterator implements Iterator<Person>{
 //        private int index=0;
 //        @Override
 //        public boolean hasNext() {

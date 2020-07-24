@@ -1,6 +1,9 @@
-package lecture10.gn8271;
-//Lecture 10
+package csc3020.lecture10.gn8271;
+// *
 // Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture10
+// *
 public class Lecture10Source {
     public static void main(String[] args) {
         //Super
