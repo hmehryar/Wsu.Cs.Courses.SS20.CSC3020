@@ -1,7 +1,7 @@
-package lecture15.gg6997;
+package csc3020.lecture15.gg6997;
 
-import static lecture15.gg6997.Flight.getAllPassengers;
-import static lecture15.gg6997.Flight.resetAllPassengers;
+import static csc3020.lecture15.gg6997.Flight.getAllPassengers;
+import static csc3020.lecture15.gg6997.Flight.resetAllPassengers;
 
 public class Lecture15Source {
     public static void main(String[] args) {
@@ -12,13 +12,13 @@ public class Lecture15Source {
 
         //System.out.println(allPassengers);
 
-        Flight lax045=new Flight();
+        csc3020.lecture15.gg6997.Flight lax045=new csc3020.lecture15.gg6997.Flight();
         lax045.add1Passenger();
         //allPassengers++;
         lax045.add1Passenger();
         //allPassengers++;
 
-        Flight slc015=new Flight();
+        csc3020.lecture15.gg6997.Flight slc015=new csc3020.lecture15.gg6997.Flight();
         slc015.add1Passenger();
         //allPassengers++;
 
@@ -28,10 +28,12 @@ public class Lecture15Source {
 
 
         //Static Initialization Block
+        /*
         System.out.println("Extracting Pilot");
-        CrewMember pilot=CrewManager.FindAvailable(FlightCrewJob.Pilot);
+        csc3020.lecture15.gg6997.CrewMember pilot= csc3020.lecture15.gg6997.CrewManager.FindAvailable(csc3020.lecture15.gg6997.FlightCrewJob.Pilot);
         System.out.println(pilot);
-
+    */
+        /*
         CrewMember[] pool=CrewManager.List();
         for (CrewMember oCrewMember:pool) {
             System.out.println(oCrewMember);
@@ -72,6 +74,6 @@ public class Lecture15Source {
         }else{
             System.out.println("Steve is a regular member");
         }
-
+*/
     }
 }

@@ -1,6 +1,4 @@
-package com.csc3020.lecture09.gz0715;
-
-import javax.sql.rowset.CachedRowSet;
+package csc3020.lecture09.gz0715;
 
 public class Lecture09Source {
     public static void main(String[] args) {
