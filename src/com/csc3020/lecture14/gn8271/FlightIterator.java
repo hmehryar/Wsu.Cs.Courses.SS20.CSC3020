@@ -1,5 +1,9 @@
-package lecture14.gn8271;
-
+package csc3020.lecture14.gn8271;
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture14
+// *
 import java.util.Iterator;
 
 public class FlightIterator implements Iterator<Person> {
@@ -7,7 +11,7 @@ public class FlightIterator implements Iterator<Person> {
     private  Passenger[] roster;
     private int index=0;
 
-    public FlightIterator(CrewMember[] crew,Passenger[] roster){
+    public FlightIterator(CrewMember[] crew, Passenger[] roster){
         this.crew=crew;
         this.roster=roster;
     }

@@ -1,4 +1,4 @@
-package lecture21.ee7708;
+package csc3020.lecture21.ee7708;
 
 import java.util.*;
 

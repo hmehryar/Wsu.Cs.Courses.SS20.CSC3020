@@ -1,4 +1,6 @@
-package lecture21.go1277;
+package csc3020.lecture21.go1277;
+
+import csc3020.lecture22.gv7006.MyComparator;
 
 import java.util.*;
 

@@ -1,5 +1,8 @@
-package lecture10.gn8271;
-//Lecture 10
+package csc3020.lecture10.gn8271;
+// *
 // Author: Raisa Zaman
-final public class Student extends Person{
+// Student ID: gn8271
+// Lecture10
+// *
+final public class Student extends Person {
 }

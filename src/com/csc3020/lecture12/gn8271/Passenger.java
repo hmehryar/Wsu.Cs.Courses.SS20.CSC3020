@@ -1,7 +1,6 @@
-package lecture12.gn8271;
-//Lecture 12
-// Author: Raisa Zaman
-public class Passenger {
+package csc3020.lecture12.gn8271;
+
+ public class Passenger {
     private int checkedBags;
     private final int freeBags ;
 
@@ -52,5 +51,3 @@ public class Passenger {
         this.perBagFee=perBagFee;
     }
 }
-
-

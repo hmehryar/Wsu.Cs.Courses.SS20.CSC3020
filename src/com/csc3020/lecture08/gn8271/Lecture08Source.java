@@ -1,6 +1,9 @@
-package lecture08.gn8271;
-//Lecture 08 - Lab03
+package csc3020.lecture08.gn8271;
+// *
 // Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture08
+// *
 public class Lecture08Source {
     public static void main(String[] args) {
         //Parameter Immutability: Primitive Types
@@ -22,8 +25,8 @@ public class Lecture08Source {
         System.out.println(flight2.getFlightNumber());
 
         //Parameter Immutability: Class Types -> Visible Changes outside of the method
-        flight1 = new Flight(10);
-        flight2 = new Flight(20);
+         flight1 = new Flight(10);
+         flight2 = new Flight(20);
         System.out.println(flight1.getFlightNumber());
         System.out.println(flight2.getFlightNumber());
         swapNumbers(flight1,flight2);
@@ -60,13 +63,13 @@ public class Lecture08Source {
         i=j;
         j=k;
         System.out.println(i.getFlightNumber());
-        System.out.println(j.getFlightNumber());
+        System.out.println(j.getFlightNumber());;
     }
     static void swap(int i, int j) {
         int k=i;
         i=j;
         j=k;
         System.out.println(i);
-        System.out.println(j);
+        System.out.println(j);;
     }
 }

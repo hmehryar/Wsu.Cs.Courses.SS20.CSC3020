@@ -1,4 +1,4 @@
-package hw03.ee7708;
+package csc3020.hw03.ee7708;
 
 public class Hw03Source
 {

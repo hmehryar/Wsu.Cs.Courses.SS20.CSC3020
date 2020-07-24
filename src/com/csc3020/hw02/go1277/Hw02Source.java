@@ -1,4 +1,4 @@
-package hw02.go1277;
+package csc3020.hw02.go1277;
 
 public class Hw02Source {
     public static void main(String[] args)

@@ -1,9 +1,4 @@
-package lecture11.go1277;
-// *
-// Author: Tia Gijo
-// Student ID: go1277
-// Lecture 11 Lab
-// *
+package csc3020.lecture11.go1277;
 
 public class Lecture11Source {
     public static void main(String[] args) {

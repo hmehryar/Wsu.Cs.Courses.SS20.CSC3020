@@ -1,18 +1,18 @@
-package lecture13.go1277;
-
-import lecture12.go1277.CargoFlight;
-
-import lecture13.go1277.gijo.travel.Flight;
-import lecture13.go1277.gijo.travel.Passenger;
+package csc3020.lecture13.go1277;
 
 
-import lecture13.go1277.xyzcompany.bar.*;
+import csc3020.lecture13.go1277.gijo.travel.CargoFlight;
+import csc3020.lecture13.go1277.gijo.travel.Flight;
+import csc3020.lecture13.go1277.gijo.travel.Passenger;
+import csc3020.lecture13.go1277.xyzcompany.bar.Beer;
+import csc3020.lecture13.go1277.xyzcompany.bar.Wine;
+
 
 public class Lecture13Source {
     public static void main(String[] args) {
-        //new lecture13.gn8271.Lecture13Source();
+
         Flight oFlight = new Flight();
-        lecture11.gn8271.Flight oLecture11Flight = new lecture11.gn8271.Flight();
+        Flight oLecture11Flight = new Flight();
         CargoFlight oCargoFlight = new CargoFlight();
 
         Flight lax175 = new Flight(175);
