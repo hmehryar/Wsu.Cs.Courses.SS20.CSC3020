@@ -1,7 +1,10 @@
-package lecture10.gn8271;
-//Lecture 10
+package csc3020.lecture10.gn8271;
+// *
 // Author: Raisa Zaman
-public class Passenger {
+// Student ID: gn8271
+// Lecture10
+// *
+ public class Passenger {
     private int checkedBags;
     private int freeBags;
 
@@ -50,5 +53,3 @@ public class Passenger {
         this.perBagFee=perBagFee;
     }
 }
-
-

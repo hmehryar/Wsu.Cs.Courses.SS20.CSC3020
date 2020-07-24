@@ -1,4 +1,4 @@
-package com.csc3020.lecture11.gz0715;
+package csc3020.lecture11.gz0715;
 
 public class Passenger {
     // Variables

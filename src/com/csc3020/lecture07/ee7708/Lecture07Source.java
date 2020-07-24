@@ -1,4 +1,4 @@
-package lecture07.ee7708;
+package csc3020.lecture07.ee7708;
 
 //Lecture 07 Source File
 //Ian Kwiotek

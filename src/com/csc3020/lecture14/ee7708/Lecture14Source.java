@@ -1,4 +1,4 @@
-package lecture14.ee7708;
+package csc3020.lecture14.ee7708;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;

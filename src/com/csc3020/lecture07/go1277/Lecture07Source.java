@@ -1,4 +1,4 @@
-package lecture07.go1277;
+package csc3020.lecture07.go1277;
 
 public class Lecture07Source
 {

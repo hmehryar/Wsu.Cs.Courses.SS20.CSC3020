@@ -1,19 +1,29 @@
-package lecture18.gn8271;
+package csc3020.lecture18.gn8271;
 
-import java.io.FileReader;
+import java.io.FileNotFoundException;
 import java.io.IOException;
-
-public class MyAutoClosable implements AutoCloseable {
-    public void saySomething() throws IOException {
-        FileReader reader = new FileReader("file1.txt");
-        throw new IOException("custom Exception");
+import java.net.MalformedURLException;
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture18
+// *
+public class MyAutoClosable implements  AutoCloseable{
+    public void saySomething() throws IOException{
+        //FileReader reader=new FileReader("filePath.txt");
+        throw new IOException("Custom Exception");
         //throw new Exception("New Exception Message");
-        //System.out.println("Something!");
+        //System.out.println("Something");
     }
+    public void ReadFromStreamByFileName() throws FileNotFoundException{
 
+    }
+    public void ReadFromStreamByUrl() throws MalformedURLException {
+
+    }
     @Override
     public void close() throws Exception {
-        throw new IOException("Custom IO Exception from close method");
+        throw new FileNotFoundException("Custom FileNotFoundException from close method");
         //System.out.println("close");
     }
 }

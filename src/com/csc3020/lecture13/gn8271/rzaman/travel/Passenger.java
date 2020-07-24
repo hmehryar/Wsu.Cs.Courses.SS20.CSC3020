@@ -1,4 +1,4 @@
-package lecture13.gn8271.rzaman.travel;
+package csc3020.lecture13.gn8271.rzaman.travel;
 
 public class Passenger {
     private int checkedBags;

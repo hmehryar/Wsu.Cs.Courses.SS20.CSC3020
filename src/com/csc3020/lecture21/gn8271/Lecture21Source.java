@@ -1,5 +1,9 @@
-package lecture21.gn8271;
-
+package csc3020.lecture21.gn8271;
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture21
+// *
 import java.util.*;
 
 public class Lecture21Source {

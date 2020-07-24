@@ -1,4 +1,4 @@
-package lecture07.ee7708;
+package csc3020.lecture07.ee7708;
 
 public class Earth {
 

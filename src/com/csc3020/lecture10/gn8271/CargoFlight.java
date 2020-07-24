@@ -1,7 +1,10 @@
-package lecture10.gn8271;
-//Lecture 10
+package csc3020.lecture10.gn8271;
+// *
 // Author: Raisa Zaman
-public class CargoFlight extends Flight{
+// Student ID: gn8271
+// Lecture10
+// *
+public class CargoFlight extends Flight {
     public float maxCargoSpace=1000.0f;
     public float usedCargoSpace;
     //public int seats=12;
@@ -49,4 +52,3 @@ public class CargoFlight extends Flight{
         System.out.println("Max Cargo Space= "+maxCargoSpace+", Used Cargo Space= "+usedCargoSpace);
     }
 }
-

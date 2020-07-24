@@ -1,4 +1,4 @@
-package com.csc3020.lecture11.he7891;
+package csc3020.lecture11.he7891;
 // *
 // Author: Nathan Tattrie
 // Student ID: he7891

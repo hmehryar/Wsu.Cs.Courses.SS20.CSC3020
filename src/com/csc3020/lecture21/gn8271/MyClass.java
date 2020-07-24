@@ -1,5 +1,9 @@
-package lecture21.gn8271;
-
+package csc3020.lecture21.gn8271;
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture21
+// *
 public class MyClass implements Comparable<MyClass>{
     private String label,value;
 

@@ -1,8 +1,12 @@
-package lecture16.gn8271;
+package csc3020.lecture16.gn8271;
 
 import java.io.IOException;
 import java.io.Reader;
-
+// *
+// Author: Raisa Zaman
+// Student ID: gn8271
+// Lecture16
+// *
 public class Lecture16Source {
     public static void main(String[] args)  {
 //        InputStream input=null;
@@ -109,7 +113,7 @@ public class Lecture16Source {
         int length;
         Reader reader=null;
         try{
-            reader=Helper.openReader("file1.txt");
+            reader= Helper.openReader("file1.txt");
             while ((length= reader.read(buff))>=0){
                 System.out.println("\nlength: "+length);
                 for (int index = 0; index <length ; index++) {

@@ -21,12 +21,21 @@ A collaborative space for CSC 3020: Java Programming!
 | [09 — Class Inheritance - Part 1](https://youtu.be/wt_kmiM0zGA) | June 2 |
 | [10 — Class Inheritance - Part 2](https://youtu.be/DPpLzJonaiY) | June 4 |
 | [11 — More About Data Types](https://youtu.be/xSzrOBz-K2w) | June 9 |
+| 12 — TBD | June 11 |
+| 13 — TBD | June 16 |
+| 14 — TBD| June 18 |
+| [15 — Static Members, Nested Types,and Anonymous Classes](https://youtu.be/ak55RdfxDzk) | June 23 |
+| 16 — TBD | June 25 |
+| [17 — Homework 3 & Homework 4 Solutions](https://youtu.be/Uc1BoTZJY2k) | June 30 |
+| 18 — TBD | July 2 |
+| [19 — Input & Output with Streams and Files - Part 3](https://youtu.be/dMnYWraMRBc) | July 7 |
 
 ## Version Control References
 
 ### CLI
 
-[Getting Started - The Command Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+* [Getting Started - The Command Line](https://git-scm.com/book/en/v2/Getting-Started-The-Command-Line)
+* [My First GitHub Contribution](http://www.iankwiotek.com/my-first-git-commit/)
 
 ### IntelliJ IDEA
 
