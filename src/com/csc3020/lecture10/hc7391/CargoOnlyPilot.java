@@ -1,4 +1,4 @@
-package com.csc3020.lecture10.hc7391;
+package csc3020.lecture10.hc7391;
 
 public class CargoOnlyPilot extends Pilot{
     @Override // must override method from abstract class

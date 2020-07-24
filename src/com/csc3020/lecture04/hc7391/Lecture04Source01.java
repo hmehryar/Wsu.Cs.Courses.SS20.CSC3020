@@ -1,4 +1,4 @@
-package com.csc3020.lecture04.hc7391;
+package csc3020.lecture04.hc7391;
 //Bryan Vinson (ID HC7391)
 //CSC 3020
 public class Lecture04Source01 {

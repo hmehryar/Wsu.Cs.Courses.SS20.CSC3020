@@ -1,4 +1,4 @@
-package com.csc3020.lecture01.he7891;
+package csc3020.lecture01.em0608;
 // *
 // Author: Kelly Maisel
 // Student ID: em0608

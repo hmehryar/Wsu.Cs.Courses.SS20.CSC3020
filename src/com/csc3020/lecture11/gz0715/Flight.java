@@ -1,6 +1,4 @@
-package com.csc3020.lecture11.gz0715;
-
-import java.util.Arrays;
+package csc3020.lecture11.gz0715;
 
 // Lecture 05: Class//
 public class Flight{

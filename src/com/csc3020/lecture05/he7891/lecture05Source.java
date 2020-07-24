@@ -1,4 +1,4 @@
-package com.csc3020.lecture05.he7891;
+package csc3020.lecture05.he7891;
 // *
 // Author: Nathan Tattrie
 // Student ID: he7891
@@ -30,12 +30,12 @@ public class lecture05Source {
             // Using Class
             int intVar;
 
-            com.csc3020.lecture05.gz0715.Flight nycToSc;
-            nycToSc = new com.csc3020.lecture05.gz0715.Flight();
+            Flight nycToSc;
+            nycToSc = new Flight();
 //        System.out.println(nycToSc.passengers);
 //        System.out.println(nycToSc.seats);
 
-            com.csc3020.lecture05.gz0715.Flight slcToDallas = new com.csc3020.lecture05.gz0715.Flight();
+            Flight slcToDallas = new Flight();
 //        System.out.println(slcToDallas.passengers);
 //        System.out.println(slcToDallas.seats);
 
@@ -44,8 +44,8 @@ public class lecture05Source {
 //        System.out.println(slcToDallas.seats);
 
             // Class are reference type
-            com.csc3020.lecture05.gz0715.Flight flight1 = new com.csc3020.lecture05.gz0715.Flight();
-            com.csc3020.lecture05.gz0715.Flight flight2 = new com.csc3020.lecture05.gz0715.Flight();
+            Flight flight1 = new Flight();
+            Flight flight2 = new Flight();
 
             flight2.add1Passenger();
 //        System.out.println("Flight 2: passengers = " + flight2.passengers);
@@ -71,7 +71,7 @@ public class lecture05Source {
             CalculateEngine oCalculateEngine1 = new CalculateEngine();
             oCalculateEngine1.showSum(1.3f, 3.5f, 11);
 
-            com.csc3020.lecture05.gz0715.Flight oMethodFlight1 = new com.csc3020.lecture05.gz0715.Flight();
+            Flight oMethodFlight1 = new Flight();
             for (int i = 0; i < 20; i++)
                 oMethodFlight1.add1Passenger();
 

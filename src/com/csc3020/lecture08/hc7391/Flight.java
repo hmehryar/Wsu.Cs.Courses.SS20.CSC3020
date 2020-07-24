@@ -1,4 +1,4 @@
-package com.csc3020.lecture08.hc7391;
+package csc3020.lecture08.hc7391;
 
 public class Flight {
     public int passengers;
@@ -70,7 +70,7 @@ public void add1Passenger(int bags)
     if(hasSeating())
     {
         add1Passenger();
-        totalCheckedBags+=1;
+        totalCheckedBags+=bags;
     }
 }
 
