@@ -1,12 +1,10 @@
-package com.csc3020.lecture09.he7891;
+package csc3020.lecture09.he7891;
 
 // *
 // Author: Nathan Tattrie
 // Student ID: he7891
 // Lecture09
 // *
-
-import com.csc3020.lecture08.he7891.Passenger;
 
 public class Flight {
 

@@ -4,7 +4,7 @@ package csc3020.lecture01.gn8271;
 // Student ID: gn8271
 // Lecture01
 // *
-public class Lecture01Source {
+public class Main {
     /*
     Sample Block Comment
     This code implement the main functionality of the program

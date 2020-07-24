@@ -1,4 +1,4 @@
-package com.csc3020.lecture11.he7891;
+package csc3020.lecture11.he7891;
 /*
 * Author: Nathan Tattrie
 * Student ID: he7891
@@ -66,11 +66,6 @@ package com.csc3020.lecture11.he7891;
 * ~ Byte, Short, Integer, Long: MIN_VALUE, MAX_VALUE< bitCount, toBinaryString
 * ~ ...
 * ~ ...
-* */
-
-/* Final Fields
-* ~ Making a field as final prevents it from being changed once assigned
-* ~~
 * */
 
 

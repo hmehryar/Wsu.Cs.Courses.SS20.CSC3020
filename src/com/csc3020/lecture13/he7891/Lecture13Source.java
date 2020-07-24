@@ -1,4 +1,4 @@
-package com.csc3020.lecture13.he7891;
+package csc3020.lecture13.he7891;
 /*
  * Author: Nathan Tattrie
  * Student ID: he7891
@@ -87,15 +87,15 @@ package com.csc3020.lecture13.he7891;
 /**/
 
 
-import com.csc3020.lecture12.he7891.CargoFlight;
+import csc3020.lecture12.he7891.CargoFlight;
 
-//import com.csc3020.lecture13.he7891.travel.Passenger;
-//import com.csc3020.lecture13.he7891.travel.Flight;
-import com.csc3020.lecture13.he7891.travel.*;
+//import csc3020.lecture13.he7891.travel.Passenger;
+//import csc3020.lecture13.he7891.travel.Flight;
+import csc3020.lecture13.he7891.travel.*;
 
-//import com.csc3020.lecture13.he7891.xyzcompany.bar.Beer;
-//import com.csc3020.lecture13.he7891.xyzcompany.bar.Wine;
-import com.csc3020.lecture13.he7891.xyzcompany.bar.*;
+//import csc3020.lecture13.he7891.xyzcompany.bar.Beer;
+//import csc3020.lecture13.he7891.xyzcompany.bar.Wine;
+import csc3020.lecture13.he7891.xyzcompany.bar.*;
 
 
 public class Lecture13Source {
@@ -103,7 +103,7 @@ public class Lecture13Source {
 
         //new com.csc3020.lecture13.he7891.Lecture13Source();
         Flight oFlight = new Flight();
-        com.csc3020.lecture11.he7891.Flight oLecture11Flight = new com.csc3020.lecture11.he7891.Flight();
+        csc3020.lecture11.he7891.Flight oLecture11Flight = new csc3020.lecture11.he7891.Flight();
         CargoFlight oCargoFlight = new CargoFlight();
 
         Flight lax175 = new Flight(175);
