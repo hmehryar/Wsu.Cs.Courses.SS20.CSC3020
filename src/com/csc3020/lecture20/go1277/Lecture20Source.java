@@ -1,4 +1,4 @@
-package lecture20.go1277;
+package csc3020.lecture20.go1277;
 
 import java.util.*;
 
